@@ -10,9 +10,9 @@ body::-webkit-scrollbar {
 
 .navbar {
   
-  //position: sticky; top: 0;
+  position: sticky; top: 0;
   padding: 1rem;
-  
+  z-index: 99;
 }
 .logo {
   margin: auto;
@@ -22,11 +22,17 @@ body::-webkit-scrollbar {
 }
 .navbar-toggler-icon {
   color: white;
+  background-color: darkblue;
 }
 .nav-icon {
   text-align: center;
   padding: .5rem;
+  color: white;
+  text-decoration: none;
   border: 1.5px solid white;
+}
+.nav-icon:hover {
+cursor: pointer;
 }
 .company-title {
   
@@ -34,10 +40,25 @@ body::-webkit-scrollbar {
   font-weight: bolder;
 }
 /* work page */
+#work {
+  padding-top: -10rem;
+  border: 1px solid green;
+}
 .workPage {
   height: 100vh;
 }
 .work-text {
   padding: 2rem;
   text-align: center;
+}
+
+
+/* about us */
+#about {
+  position: absolute;
+  padding-top: -10rem;
+  border: 1px solid green;
+}
+.aboutPage {
+  height: 100vh;
 }

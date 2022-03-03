@@ -27,9 +27,9 @@ export const Header = () => {
       <div className="collapse navbar-collapse " id="navbarNavDropdown">
         <div className="col-sm-4"></div>
 
-        <div className="nav-icon col-sm-2">Our work</div>
-        <div className="nav-icon col-sm-2">About Us</div>
-        <div className="nav-icon col-sm-2">Contact us</div>
+        <a className="nav-icon col-sm-2" href="#work">Our work</a>
+        <a className="nav-icon col-sm-2" href="#about">About Us</a>
+        <a className="nav-icon col-sm-2" href="#contact">Contact us</a>
       </div>
     </nav>
   );
