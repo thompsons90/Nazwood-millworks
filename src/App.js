@@ -8,11 +8,11 @@ import { OurWork } from './components/ourWork';
 function App() {
   return (
     <div className="App container-fluid">
+      <div id="work"></div>
      <Header />
-     <div id="work"></div>
-     <OurWork />
-     <div id="about"></div>
-     <AboutUs />
+     
+     <OurWork /><div id="about"></div>
+    
      <div id="contact"></div>
      <Contact />
     </div>

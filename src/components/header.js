@@ -10,6 +10,7 @@ export const Header = () => {
           className="logo"
           width="140px"
           height="100px"
+         
         ></img>
         <h2 className="company-title">NazWood Millworks</h2> 
       </div>
