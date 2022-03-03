@@ -4,15 +4,18 @@ body {
 }
 body::-webkit-scrollbar {
   display: none;
-  
-
 }
-
+/* navigation  */
+#about {
+  border: 1px solid green;
+  padding: -5rem;
+}
 .navbar {
-  
-  position: sticky; top: 0;
-  padding: 1rem;
+  position: sticky;
+  top: 0;
+  padding: .5rem;
   z-index: 99;
+  background-color: black;
 }
 .logo {
   margin: auto;
@@ -22,25 +25,24 @@ body::-webkit-scrollbar {
 }
 .navbar-toggler-icon {
   color: white;
-  background-color: darkblue;
+  background-image: url("./images/burger.png");
 }
 .nav-icon {
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   color: white;
   text-decoration: none;
   border: 1.5px solid white;
+  background-color: black;
 }
 .nav-icon:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 .company-title {
-  
   text-transform: uppercase;
   font-weight: bolder;
 }
 /* work page */
-
 
 .work-text {
   padding: 2rem;
@@ -50,11 +52,32 @@ cursor: pointer;
   width: 100%;
   height: 100%;
 }
-
-
+ul {
+  list-style-type: none;
+}
+.list {
+  margin:auto;
+}
 /* about us */
 
 .aboutPage {
   height: 100vh;
   padding-top: 5rem;
 }
+
+
+/* contact us */ 
+/*
+.wood-background {
+  display: flex;
+ 
+  position: relative;
+  z-index: -1;
+  height: 105vh;
+  justify-content: center;
+  align-items: center;
+background-image: url('./images/background.jfif');
+background-size: 100% 100%;
+
+}
+*/

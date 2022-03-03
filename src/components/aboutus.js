@@ -4,7 +4,8 @@ import React from 'react';
 
 export const AboutUs = () => {
     return (
-        <div className="aboutPage container-fluid">
+        <div className="aboutPage container-fluid " >
+            
             <h4 className="work-text"> “From our Mill to your job-site <br />Quality and Service is our Passion.”</h4>
         <div className="row">
         

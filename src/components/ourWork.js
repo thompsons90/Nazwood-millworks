@@ -70,8 +70,9 @@ export const OurWork = () => {
           </div>
           <div className="col-sm-4">
             <img src="./wood.jpg" className="img-fluid" alt="wood" />
-            <h5 className="text-center">SUPERIOR CRAFTED CABINETS</h5>
-            <ul>
+            <div id="about"></div>
+            <h5 className="text-center"> Superior crafted Cabinets </h5>
+            <ul className="list">
                 <li>Face frame </li>
             
             <li>Euro </li>
@@ -90,6 +91,7 @@ export const OurWork = () => {
 
             </ul>
           </div>
+          
         </div>
       </div>
     </div>
