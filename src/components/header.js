@@ -31,7 +31,7 @@ export const Header = () => {
         <a className="nav-icon col-sm-2" href="#work">Our work</a>
         <a className="nav-icon col-sm-2" href="#about">About Us</a>
         <a className="nav-icon col-sm-2" href="#contact">Contact us</a>
-        <a className="nav-icon col-sm-2" href="#photos">Photos</a>
+        <a className="nav-icon col-sm-2" href="#reviews">Reviews</a>
       </div>
     </nav>
   );

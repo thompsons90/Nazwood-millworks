@@ -67,17 +67,17 @@ ul {
 
 
 /* contact us */ 
-/*
+
 .wood-background {
-  display: flex;
+ 
  
   position: relative;
   z-index: -1;
-  height: 105vh;
+  height: 60vh;
   justify-content: center;
   align-items: center;
-background-image: url('./images/background.jfif');
-background-size: 100% 100%;
+background-image: url('./images/woodVariety.jpg');
+background-size: 100%;
 
 }
-*/
+
