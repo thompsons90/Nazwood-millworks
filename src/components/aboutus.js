@@ -17,10 +17,7 @@ export const AboutUs = () => {
         </div>
 
 </div>
-<div className='row'>
-   <h4 className="work-text"> Wood Species</h4>
-<div className="wood-background"></div>
-</div>
+
     </div>
     )
 }
