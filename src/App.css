@@ -84,10 +84,18 @@ background-size: cover;
   text-align: center;
  font-size: 2rem;
   color: white;
+  margin-top: 10rem;
 }
 /* reviews  */
 
 .reviews {
 
 height: 50vh;
+}
+
+
+
+/* contact us */
+.contact {
+  height: 50vh;
 }

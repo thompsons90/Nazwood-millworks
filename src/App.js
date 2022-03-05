@@ -14,14 +14,15 @@ function App() {
      <Header />
      
      <OurWork />
-    <AboutUs />
+    <AboutUs /> <WoodTypes />
+   
     <div id="reviews"></div>
     <Reviews />
-     <div id="contact"></div>
+   
+       
+       <div id="contact"></div>
      <Contact />
     
-       <WoodTypes />
-     
     </div>
   );
 }
