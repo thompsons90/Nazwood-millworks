@@ -5,6 +5,12 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+.hidden {
+  display: none;
+}
+.pointer {
+  cursor: pointer;
+}
 /* navigation  */
 #about {
   border: 1px solid green;
@@ -90,12 +96,10 @@ background-size: cover;
 
 .reviews {
 padding-top: 10rem;
-height: 50vh;
 }
 
 
 
 /* contact us */
 .contact {
-  height: 50vh;
 }
