@@ -89,7 +89,7 @@ const scheduleEvent = (e) => {
               
               onChange={(e) => uploadImage(e)}
             ></input>
-            <button className={UserImage === null ? `hidden` : `yes`} onClick={() => scheduleEvent() }>Submit photo</button>
+            <button className={UserImage === null ? `hidden` : `yes`} onClick={(e) => scheduleEvent(e) }>Submit photo</button>
           </div>
         </div>
       </div>

@@ -6,7 +6,8 @@ import { Header } from './components/header';
 import { OurWork } from './components/ourWork';
 import { Reviews } from './components/reviews';
 import {  WoodTypes } from './components/woodtypes';
-
+import { Router, Route } from "react-router-dom";
+import { ImageReview } from './components/imageReview';
 function App() {
   return (
     <div className="App container-fluid">
@@ -21,7 +22,7 @@ function App() {
        
        <div id="contact"></div>
      <Contact />
-    
+  
     </div>
   );
 }
