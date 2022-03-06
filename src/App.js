@@ -16,7 +16,6 @@ function App() {
      <OurWork />
     <AboutUs /> <WoodTypes />
    
-    <div id="reviews"></div>
     <Reviews />
    
        

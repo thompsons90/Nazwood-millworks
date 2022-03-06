@@ -13,7 +13,7 @@ export const AboutUs = () => {
 <img src="./wood.jpg" className="img-fluid" alt="wood" />
         </div>
        <div className="col-sm-8">
-         <h4 className="work-text">  Nazwood Millworks is a family-owned manufacturer of high quality custom mouldings and millwork in the Inland Northwest. We are mill direct for home builders, contractors, architects and designers.</h4> 
+         <h4 className="work-text" >  Nazwood Millworks is a family-owned manufacturer of high quality custom mouldings and millwork in the Inland Northwest. We are mill direct for home builders, contractors, architects and designers.</h4> 
         </div>
 
 </div>
