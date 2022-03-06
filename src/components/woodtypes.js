@@ -6,8 +6,8 @@ export const WoodTypes = () => {
       <div className="row wood">
         <div className="wood-background">
         <div className="wood-types">
-          Walnut, White oak, Poplar, Alder, Cherry, Maple, Hickory <br /> &
-          Exotics upon request…
+          We offer Walnut, White oak, Poplar, Alder, Cherry, Maple, Hickory <br /> 
+          <b>Exotics available upon request</b>
         </div></div>
       </div>
     </div>

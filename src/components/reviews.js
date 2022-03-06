@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react";
-
+import axios from "axios";
 
 export const Reviews = () => {
     const [Curb, setCurb] = useState([]);
     const [active, setActive] = useState(false)
+    const [UserImage, setImage] = useState(null);
   async function getCalendarInfo() {
     const response = await fetch(
       "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/getEvents/incoming_webhook/getEvents"
@@ -19,6 +20,43 @@ export const Reviews = () => {
    getCalendarInfo()
    
  }, [])
+ const uploadImage = (e) => {
+    
+  var fileIn = e.target;
+  var file = fileIn.files[0];
+  if (file && file.size < 5e6) {
+      const formData = new FormData();
+
+      formData.append("image", file);
+      fetch("https://api.imgur.com/3/image", {
+          method: "POST",
+          headers: {
+              Authorization: "Client-ID f46304c018d188d",
+              Accept: "application/json",
+          },
+          body: formData,
+      })
+          .then((response) => response.json())
+          .then((response) => {
+              e.preventDefault();
+              console.log(response);
+              console.log(response.data.link); // this is where the link is stored
+              setImage(response.data.link)
+          });
+  } 
+  
+}
+const scheduleEvent = (e) => {
+  e.preventDefault();
+
+  axios.post(
+    "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/schedule/incoming_webhook/scheduleEvent",
+    UserImage
+  );
+  alert('Thanks for your submission! ')
+  
+};
+
  if (Curb ) {
     return (
       
@@ -43,8 +81,15 @@ export const Reviews = () => {
             );
           })}
         <div> <h3 onClick={() => setActive(!active)} className="work-text pointer">Submit your own photo</h3>
-        <div className={active === true ? `yes` : `hidden` } >
-          FORM HERE
+        <div className={active === true ? `text-center` : `hidden` } >
+        <input
+              type="file"
+              id="image"
+              name="First image"
+              
+              onChange={(e) => uploadImage(e)}
+            ></input>
+            <button className={UserImage === null ? `hidden` : `yes`} onClick={() => scheduleEvent() }>Submit photo</button>
           </div>
         </div>
       </div>
@@ -53,7 +98,7 @@ export const Reviews = () => {
     return (
      
       <div className="calendarPage">
-       Something's wrong with the data or your internet connection if you see this for more than a couple seconds. 
+       Something's wrong with your internet connection if you see this for more than a couple seconds. 
       </div>
     );
   } 
