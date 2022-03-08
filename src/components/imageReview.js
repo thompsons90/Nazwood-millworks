@@ -33,9 +33,9 @@ export const ImageReview = () => {
                  
                   
                     <div className="col-sm-4">
-                   <img src={Curb.imageOne} className="img-fluid" alt="Customer "></img>
+                   <img src={Curb.image} className="img-fluid" alt="Customer "></img>
                    </div></div>
-                  
+                  <button>Delete</button>
                   
                   </div>
                 );

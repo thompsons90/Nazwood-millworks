@@ -16,9 +16,12 @@ setUserArray(json.Curb[0]);
         console.log(userArray, 'Array')
        
       }
+      useEffect(() => {
+         getUserData()
+      }, [])
     const unHide = () => {
       setHidden(!hidden)
-      getUserData()
+     
     }
     const authUser = () => {
       let username = document.getElementById('username').value
@@ -46,7 +49,7 @@ setUserArray(json.Curb[0]);
             <br />
             <input placeholder="password" id="password"></input>
             <br />
-            <button onClick={() => authUser()}>{verified ? <Link to="/imagereview">See Calendar</Link> : 'Login'}</button>
+            <button onClick={() => authUser()}>{verified ? <Link to="/imagereview">Review customer images</Link> : 'Login'}</button>
             </div><h3 className="text-center"> <br /><Link to="/">Back to front page</Link></h3></div>
     )
 }
