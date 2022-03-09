@@ -46,15 +46,20 @@ export const Reviews = () => {
   } 
   
 }
+let userData = [
+    {
+      image: UserImage
+    },
+  ];
 const scheduleEvent = (e) => {
   e.preventDefault();
 
   axios.post(
     "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/schedule/incoming_webhook/scheduleEvent",
-    UserImage
+    userData[0]
   );
   alert('Thanks for your submission! ')
-  console.log(UserImage)
+  
 };
 
  if (Curb ) {
