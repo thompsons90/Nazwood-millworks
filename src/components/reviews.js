@@ -51,7 +51,7 @@ const scheduleEvent = (e) => {
   e.preventDefault();
   let userData = [
     {
-      image: image1
+      image1: image1
     },
   ];
   
