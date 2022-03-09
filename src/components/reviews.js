@@ -4,7 +4,7 @@ import axios from "axios";
 export const Reviews = () => {
     const [Curb, setCurb] = useState([]);
     const [active, setActive] = useState(false)
-    const [UserImage, setImage] = useState(null);
+    const [image1, setImage] = useState(null);
   async function getCalendarInfo() {
     const response = await fetch(
       "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/getEvents/incoming_webhook/getEvents"
@@ -48,7 +48,7 @@ export const Reviews = () => {
 }
 let userData = [
     {
-      image: UserImage
+      image: image1
     },
   ];
 const scheduleEvent = (e) => {
@@ -59,6 +59,7 @@ const scheduleEvent = (e) => {
     userData
     
   );
+  console.log(userData)
   alert('Thanks for your submission! ')
   
 };
@@ -95,7 +96,7 @@ const scheduleEvent = (e) => {
               
               onChange={(e) => uploadImage(e)}
             ></input>
-            <button className={UserImage === null ? `hidden` : `yes`} onClick={(e) => scheduleEvent(e) }>Submit photo</button>
+            <button className={image1 === null ? `hidden` : `yes`} onClick={(e) => scheduleEvent(e) }>Submit photo</button>
           </div>
         </div>
       </div>
