@@ -56,7 +56,8 @@ const scheduleEvent = (e) => {
 
   axios.post(
     "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/schedule/incoming_webhook/scheduleEvent",
-    userData[0]
+    userData
+    
   );
   alert('Thanks for your submission! ')
   
