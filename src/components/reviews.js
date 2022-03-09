@@ -46,23 +46,46 @@ export const Reviews = () => {
   } 
   
 }
-let userData = [
+
+const scheduleEvent = (e) => {
+  e.preventDefault();
+  let userData = [
     {
       image: image1
     },
   ];
-const scheduleEvent = (e) => {
-  e.preventDefault();
+  
 
   axios.post(
     "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/schedule/incoming_webhook/scheduleEvent",
-    userData.image
+    userData
     
   );
   console.log(userData)
   
 };
+/*  pets webhook
+exports = async function(payload, response) {
 
+  if (payload.body) {
+      const body =  EJSON.parse(payload.body.text());
+      const reviews = context.services.get("mongodb-atlas").db("pets").collection("my_pets");
+      
+      const reviewDoc = {
+          pet: body.pet,
+          breed: body.breed,
+          user: body.user,
+         image: body.image,
+          desc: body.desc,
+          
+      };
+  
+      return await reviews.insertOne(reviewDoc);
+  }
+
+  return  {};
+};
+*/ 
  if (Curb ) {
     return (
       
