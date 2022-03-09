@@ -54,7 +54,7 @@ const scheduleEvent = (e) => {
     UserImage
   );
   alert('Thanks for your submission! ')
-  
+  console.log(UserImage)
 };
 
  if (Curb ) {

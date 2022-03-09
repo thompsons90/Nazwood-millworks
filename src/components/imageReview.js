@@ -24,7 +24,7 @@ export const ImageReview = () => {
         return (
           
           <div className="calendarPage">
-            
+            <div>Back to front page </div>
             {Curb.map((Curb) => {
                 return (
                   <div className="container-fluid">
