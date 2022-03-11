@@ -61,7 +61,7 @@ const scheduleEvent = (e) => {
    image
     
   );
-  console.log(userData)
+  console.log(image)
   
 };
 /*  pets webhook
@@ -118,7 +118,8 @@ exports = async function(payload, response) {
               
               onChange={(e) => uploadImage(e)}
             ></input>
-            <button className={image === null ? `hidden` : `yes`} onClick={(e) => scheduleEvent(e) }>Submit photo</button>
+            <button className="" onClick={(e) => scheduleEvent(e) }>Submit photo</button>
+            {/* {image === null ? `hidden` : `yes`} */}
           </div>
         </div>
       </div>
