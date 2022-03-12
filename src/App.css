@@ -26,12 +26,11 @@ body::-webkit-scrollbar {
 .logo {
   margin: auto;
 }
-.navbar-toggler {
-  color: white;
-}
+
 .navbar-toggler-icon {
   color: white;
   background-image: url("./images/burger.png");
+  background-size: 200% 200%;
 }
 .nav-icon {
   text-align: center;
