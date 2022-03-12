@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 
 export const Header = () => {
+  const [hidden, setHidden] = useState(false)
   return (
     <nav className="navbar navbar-expand-lg ">
-      <div className="navbar-brand" >
+      <div className="navbar-brand" onClick={() => setHidden(!hidden)} >
         <img
           src="./logo.png"
           alt="wood-working"
@@ -25,14 +26,22 @@ export const Header = () => {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse " id="navbarNavDropdown">
-        <div className="col-sm-4"></div>
+      
+<ul id="nav" className={hidden === true ? `overlay` : `hidden`}>
+	<li class="nav-link">
+		<h1 data-name="home">Home</h1>
+	</li>
+	<li class="nav-link">
+		<h1 data-name="About">About</h1>
+	</li>
+	<li class="nav-link">
+		<h1 data-name="services">services</h1>
+	</li>
+	<li class="nav-link">
+		<h1 data-name="contact">contact</h1>
+	</li>
+</ul>
 
-        <a className="nav-icon col-sm-2" href="#work">Our work</a>
-        <a className="nav-icon col-sm-2" href="#about">About Us</a>
-        <a className="nav-icon col-sm-2" href="#reviews">Reviews</a><a className="nav-icon col-sm-2" href="#contact">Contact us</a>
-        
-      </div>
     </nav>
   );
 };
