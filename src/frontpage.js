@@ -10,7 +10,7 @@ import {  WoodTypes } from './components/woodtypes';
 export const FrontPage = () => {
     return (
         <div>
-            <div className="App container-fluid">
+            <div className=" container-fluid">
       <div id="work"></div>
      <Header />
      

@@ -13,15 +13,7 @@ body::-webkit-scrollbar {
 }
 /* navigation effect */
 .overlay {
-  display: -webkit-flexbox;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    justify-content: center;
+ 
   background-color: black;
   height: 100vh;
 }
@@ -58,7 +50,7 @@ h1:hover::before {
 
 h1::after {
 	content: "";
-	height: 4px;
+	height: 5%;
 	width: 0;
 	position: absolute;
 	top: 50%;
@@ -78,13 +70,14 @@ h1:hover::after {
   border: 1px solid green;
   padding: -5rem;
 }
-.navbar {
+.sticky {
   position: sticky;
   top: 0;
   padding: .5rem;
   z-index: 99;
   background-color: black;
 }
+
 .logo {
   margin: auto;
 }
@@ -110,7 +103,9 @@ h1:hover::after {
   font-weight: bolder;
 }
 /* work page */
-
+.workPage {
+  border: 5px solid green;
+}
 .work-text {
   padding: 2rem;
   text-align: center;
@@ -130,6 +125,7 @@ ul {
 .aboutPage {
   height: 100vh;
   padding-top: 5rem;
+  border: 5px solid green;
 }
 
 
@@ -157,6 +153,7 @@ background-size: cover;
 
 .reviews {
 padding-top: 10rem;
+border: 5px solid green;
 }
 
 

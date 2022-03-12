@@ -3,8 +3,9 @@ import React, {useState} from "react";
 export const Header = () => {
   const [hidden, setHidden] = useState(false)
   return (
-    <nav className="navbar navbar-expand-lg ">
-      <div className="navbar-brand" onClick={() => setHidden(!hidden)} >
+    <div className="container-fluid">
+      <div className="row sticky">
+ <div className="col-sm-4" onClick={() => setHidden(!hidden)} >
         <img
           src="./logo.png"
           alt="wood-working"
@@ -13,35 +14,35 @@ export const Header = () => {
           height="100px"
          
         ></img>
-        <h2 className="company-title">NazWood Millworks</h2> 
+        <h2 className="company-title col-sm-4" >NazWood Millworks</h2> 
       </div>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      
-<ul id="nav" className={hidden === true ? `overlay` : `hidden`}>
-	<li class="nav-link">
+      </div>
+     
+    
+<ul id="nav" className={hidden === true ? `overlay container-fluid` : `hidden`}>
+  <div className="col-sm-6">
+<li class="nav-link">
 		<h1 data-name="home">Home</h1>
 	</li>
-	<li class="nav-link">
-		<h1 data-name="About">About</h1>
+  </div>
+	
+  <div className="col-sm-6">
+<li class="nav-link">
+		<h1 data-name="home">Home</h1>
 	</li>
-	<li class="nav-link">
-		<h1 data-name="services">services</h1>
+  </div>
+	<div className="col-sm-6">
+<li class="nav-link">
+		<h1 data-name="home">Home</h1>
 	</li>
-	<li class="nav-link">
-		<h1 data-name="contact">contact</h1>
+  </div>
+	<div className="col-sm-6">
+<li class="nav-link">
+		<h1 data-name="home">Home 2</h1>
 	</li>
+  </div>
 </ul>
 
-    </nav>
+    </div>
   );
 };

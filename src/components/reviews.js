@@ -111,7 +111,7 @@ exports = async function(payload, response) {
               name="First image"
               onChange={(e) => uploadImage(e)}
             ></input>
-            <button className="" onClick={(e) => scheduleEvent(e)}>
+            <button className={image === null ? `hidden` : `yes`} onClick={(e) => scheduleEvent(e)}>
               Submit photo
             </button>
             {/* {image === null ? `hidden` : `yes`} */}
