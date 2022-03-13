@@ -14,13 +14,6 @@ body::-webkit-scrollbar {
 /* ken burns effect */
 /* homepage effects */
 
-$items: 3;
-$animation-time: 4s;
-$transition-time: 0.8s;
-$scale: 20%;
-
-$total-time: ($animation-time * $items);
-$scale-base-1: (1 + $scale / 100%);
 .kenBox {
   text-align: center;
   padding-top: 1rem;
