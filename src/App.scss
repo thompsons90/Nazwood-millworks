@@ -35,89 +35,32 @@ height: 90vh;
 
 
 .slideshow-image2 {
-  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   width: 100%;
   height: 100%;
   background: no-repeat 25% 25%;
   background-size: cover;
-  animation-name: kenburns;
+
   animation-delay: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: $total-time;
+
   opacity: 1;
-  transform: scale($scale-base-1);
-
-  @for $i from 1 through $items {
-    &:nth-child(#{$i}) {
-      animation-name: kenburns-#{$i};
-      z-index: ($items - $i);
-    }
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Woodwork.jpg");
+ 
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-@for $i from 1 through $items {
-  @keyframes kenburns-#{$i} {
-    $animation-time-percent: percentage($animation-time / $total-time);
-    $transition-time-percent: percentage($transition-time / $total-time);
 
-    $t1: ($animation-time-percent * ($i - 1) - $transition-time-percent / 2);
-    $t2: ($animation-time-percent * ($i - 1) + $transition-time-percent / 2);
-    @if ($t1 < 0%) {
-      $t1: 0%;
-    }
-    @if ($t2 < 0%) {
-      $t2: 0%;
-    }
 
-    $t3: ($animation-time-percent * ($i) - $transition-time-percent / 2);
-    $t4: ($animation-time-percent * ($i) + $transition-time-percent / 2);
-    @if ($t3 > 100%) {
-      $t3: 100%;
-    }
-    @if ($t4 > 100%) {
-      $t4: 100%;
-    }
-
-    $t5: (100% - $transition-time-percent / 2);
-    $t6: (($t4 - $t1) * 100% / $t5);
-
-    #{$t1} {
-      opacity: 1;
-      transform: scale($scale-base-1);
-    }
-    #{$t2} {
-      opacity: 1;
-    }
-    #{$t3} {
-      opacity: 1;
-    }
-    #{$t4} {
-      opacity: 0;
-      transform: scale(1);
-    }
-
-    @if ($i != $items) {
-      100% {
-        opacity: 0;
-        transform: scale($scale-base-1);
-      }
-    }
-
-    @if ($i == 1) {
-      $scale-plus: ($scale * (100% - $t5) / $t4);
-      $scale-plus-base-1: (1 + ($scale + $scale-plus) / 100%);
-
-      #{$t5} {
-        opacity: 0;
-        transform: scale($scale-plus-base-1);
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  }
-}
 /* navigation effect */
 .overlay {
  
@@ -211,6 +154,10 @@ h1:hover::after {
 /* work page */
 .workPage {
   border: 5px solid green;
+}
+.work-slide {
+  text-align: center;
+  align-items: center;
 }
 .work-text {
   padding: 2rem;

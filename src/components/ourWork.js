@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-
+import { WorkPopUp } from "../add-ons/workPopUp";
+import woodworking from '../images/Woodwork.jpg'
 export const OurWork = () => {
   return (
     <div className="workPage container-fluid">
@@ -33,6 +34,11 @@ export const OurWork = () => {
           </Carousel>
         </div>
         <div className="row">
+        <h4 className="work-text">
+        {" "}
+        “From our Mill to your job-site <br />
+        Quality and Service is our Passion.”
+      </h4>
           <div className="col-sm-4">
             <img src="./wood.jpg" className="img-fluid" alt="wood" />
             <h5 className="text-center">Boards</h5>
@@ -68,8 +74,8 @@ export const OurWork = () => {
 <li>Stair Parts</li>
 </ul>
           </div>
-          <div className="col-sm-4">
-            <img src="./wood.jpg" className="img-fluid" alt="wood" />
+          <div className="col-sm-4 work-slide">
+           <WorkPopUp  image={woodworking} />
             <div id="about"></div>
             <h5 className="text-center"> Superior crafted Cabinets </h5>
             <ul className="list">
