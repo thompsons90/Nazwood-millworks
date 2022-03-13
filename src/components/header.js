@@ -4,7 +4,7 @@ export const Header = () => {
   const [hidden, setHidden] = useState(false)
   return (
     <div className="container-fluid">
-      <div className="row sticky">
+      <div className="row navigation">
  <div className="col-sm-4" onClick={() => setHidden(!hidden)} >
         <img
           src="./logo.png"
