@@ -19,28 +19,29 @@ export const Header = () => {
       </div>
      
     
-<ul id="nav" className={hidden === true ? `overlay container-fluid` : `hidden`}>
-  <div className="col-sm-6">
+<ul id="nav" className={hidden === true ? `overlay ` : `hidden`}>
+  <div className="overlay-inner text-center">
+  <div className="">
 <li class="nav-link">
 		<h1 data-name="home">Home</h1>
 	</li>
   </div>
 	
-  <div className="col-sm-6">
+  <div className="">
 <li class="nav-link">
 		<h1 data-name="home">Home</h1>
 	</li>
   </div>
-	<div className="col-sm-6">
+	<div className="">
 <li class="nav-link">
 		<h1 data-name="home">Home</h1>
 	</li>
   </div>
-	<div className="col-sm-6">
+	<div className="">
 <li class="nav-link">
 		<h1 data-name="home">Home 2</h1>
 	</li>
-  </div>
+  </div></div>
 </ul>
 
     </div>

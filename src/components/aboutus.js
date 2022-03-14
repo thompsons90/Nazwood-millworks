@@ -4,9 +4,7 @@ export const AboutUs = () => {
   return (
     <div className="aboutPage container-fluid ">
       <h4 className="work-text">
-        {" "}
-        “From our Mill to your job-site <br />
-        Quality and Service is our Passion.”
+        "Another quote"
       </h4>
       <div className="row">
         <div className="col-sm-4">
