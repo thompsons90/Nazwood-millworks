@@ -143,6 +143,8 @@ h1:hover::after {
 .company-title {
   text-transform: uppercase;
   font-weight: bolder;
+  -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: black;
 }
 /* work page */
 .workPage {

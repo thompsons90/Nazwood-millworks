@@ -4,7 +4,7 @@ import ".//workPopUp.css";
 export const WorkPopUp = (props) => {
   return (
     <div className="wrap container-fluid">
-
+<div className="row">
     <div className="tile col-sm-4"> 
       <img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80' alt="wood" />
       <div className="text">
@@ -45,7 +45,7 @@ export const WorkPopUp = (props) => {
         <span></span>
         <span></span>
       </div>
-      </div>
+      </div></div>
      </div>
     </div>
       
