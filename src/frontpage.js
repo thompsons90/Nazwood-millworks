@@ -17,8 +17,8 @@ export const FrontPage = () => {
       <div id="work"></div>
     
      
-     <OurWork />
-    <AboutUs /> <WoodTypes />
+     <OurWork /><WoodTypes />
+    <AboutUs /> 
    <div id="reviews"></div>
     <Reviews />
    
