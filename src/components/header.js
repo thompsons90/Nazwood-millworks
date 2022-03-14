@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 export const Header = () => {
+  const [hidden, setHidden] = useState(false)
   return (
-    <nav className="navbar navbar-expand-lg ">
-      <div className="navbar-brand" >
+    <div className="container-fluid">
+      <div className="row navigation">
+ <div className="col-sm-4" onClick={() => setHidden(!hidden)} >
         <img
           src="./logo.png"
           alt="wood-working"
@@ -12,27 +14,35 @@ export const Header = () => {
           height="100px"
          
         ></img>
-        <h2 className="company-title">NazWood Millworks</h2> 
+        <h2 className="company-title col-sm-4" >NazWood Millworks</h2> 
       </div>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse " id="navbarNavDropdown">
-        <div className="col-sm-4"></div>
+      </div>
+     
+    
+<ul id="nav" className={hidden === true ? `overlay container-fluid` : `hidden`}>
+  <div className="col-sm-6">
+<li class="nav-link">
+		<h1 data-name="home">Home</h1>
+	</li>
+  </div>
+	
+  <div className="col-sm-6">
+<li class="nav-link">
+		<h1 data-name="home">Home</h1>
+	</li>
+  </div>
+	<div className="col-sm-6">
+<li class="nav-link">
+		<h1 data-name="home">Home</h1>
+	</li>
+  </div>
+	<div className="col-sm-6">
+<li class="nav-link">
+		<h1 data-name="home">Home 2</h1>
+	</li>
+  </div>
+</ul>
 
-        <a className="nav-icon col-sm-2" href="#work">Our work</a>
-        <a className="nav-icon col-sm-2" href="#about">About Us</a>
-        <a className="nav-icon col-sm-2" href="#reviews">Reviews</a><a className="nav-icon col-sm-2" href="#contact">Contact us</a>
-        
-      </div>
-    </nav>
+    </div>
   );
 };

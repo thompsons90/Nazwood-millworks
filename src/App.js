@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import { FrontPage } from './frontpage';
 import {
   BrowserRouter,
