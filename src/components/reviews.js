@@ -7,7 +7,7 @@ export const Reviews = () => {
   const [image, setImage] = useState(null);
   async function getCalendarInfo() {
     const response = await fetch(
-      "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/getEvents/incoming_webhook/getEvents"
+      "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/get-display-images/incoming_webhook/getImages"
     );
     const json = await response.json();
 
@@ -95,9 +95,9 @@ exports = async function(payload, response) {
           {Curb.map((Curb) => {
             return (
               <div className="">
-                <div className="col-sm-4">
+                <div className="col-sm-4" key={Curb._id}>
                   <img
-                    src={Curb.image}
+                    src={Curb.image} 
                     className="img-fluid"
                     alt="Review"
                   ></img>

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
 
 export const ImageReview = () => {
@@ -24,7 +25,8 @@ export const ImageReview = () => {
         return (
           
           <div className="calendarPage">
-            <div>Back to front page </div>
+            <Link to='/'>Back to front page </Link>
+            <h1 className="text-center">Here you can approve or delete images. If you like them hit "Submit" if not, "Delete"</h1>
             {Curb.map((Curb) => {
                 return (
                   <div className="container-fluid">
@@ -36,7 +38,7 @@ export const ImageReview = () => {
                    <img src={Curb.image} className="img-fluid" alt="Customer "></img>
                    </div></div>
                   <button>Delete</button>
-                  
+                  <button>Submit</button>
                   </div>
                 );
               })}

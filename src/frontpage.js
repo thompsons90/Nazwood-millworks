@@ -7,6 +7,7 @@ import HeroImage from "./add-ons/hero-image";
 import { OurWork } from './components/ourWork';
 import { Reviews } from './components/reviews';
 import {  WoodTypes } from './add-ons/woodtypes';
+import { Link } from "react-router-dom";
 
 
 export const FrontPage = () => {
@@ -25,7 +26,7 @@ export const FrontPage = () => {
        
        <div id="contact"></div>
      <Contact />
-  
+  <Link to="/imagereview">Employee login</Link>
     </div>
         </div>
     )
