@@ -4,8 +4,8 @@ import ".//workPopUp.css";
 export const WorkPopUp = () => {
   return (
     <div className="wrap container-fluid">
-
-    <div className="tile col-sm-4"> 
+<div className="row">
+    <div className="tile col-4"> 
       <img src='./cabnets.jpg' alt="wood" />
       <div className="text">
       <h1>Superior Cabniets</h1>
@@ -16,7 +16,7 @@ export const WorkPopUp = () => {
      </div>
     
     
-    <div className="tile col-sm-4"> 
+    <div className="tile col-4"> 
       <img src='./moulding.jpg'  alt="wood" />
       <div className="text">
       <h1>Moulding</h1>
@@ -26,7 +26,7 @@ export const WorkPopUp = () => {
       </div>
      </div>
       
-      <div className="tile col-sm-4"> 
+      <div className="tile col-4"> 
       <img src='./trim.jpg'  alt="wood" />
       <div className="text">
       <h1>Trim</h1>
@@ -34,7 +34,7 @@ export const WorkPopUp = () => {
       <p className="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
   
       </div></div>
-     
+     </div>
     </div>
       
       
