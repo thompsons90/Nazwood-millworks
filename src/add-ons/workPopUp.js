@@ -1,7 +1,7 @@
 import React from "react";
 import ".//workPopUp.css";
 
-export const WorkPopUp = (props) => {
+export const WorkPopUp = () => {
   return (
     <div className="wrap container-fluid">
 
