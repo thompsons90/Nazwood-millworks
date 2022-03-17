@@ -23,23 +23,23 @@ export const Header = () => {
   <div className="overlay-inner text-center">
   <div className="">
 <li class="nav-link">
-		<h1 data-name="Our Work" className="nav-text" href="#work" onClick={() => setHidden(!hidden)}>Our work</h1>
+		<a data-name="Our Work" className="nav-text" href="#work" onClick={() => setHidden(!hidden)}>Our work</a>
 	</li>
   </div>
 	
   <div className="">
 <li class="nav-link">
-<h1 data-name="About Us" className="nav-text" href="#work" onClick={() => setHidden(!hidden)}>About Us</h1>
+<a data-name="About Us" className="nav-text" href="#work" onClick={() => setHidden(!hidden)}>About Us</a>
 	</li>
   </div>
 	<div className="">
 <li class="nav-link">
-<h1 data-name="Reviews" className="nav-text" href="#reviews" onClick={() => setHidden(!hidden)}>Reviews</h1>
+<a data-name="Reviews" className="nav-text" href="#reviews" onClick={() => setHidden(!hidden)}>Reviews</a>
 	</li>
   </div>
 	<div className="">
 <li class="nav-link">
-		<h1 data-name="Contact Us" className="nav-text" href="#contact" onClick={() => setHidden(!hidden)}>Contact Us</h1>
+		<a data-name="Contact Us" className="nav-text" href="#contact" onClick={() => setHidden(!hidden)}>Contact Us</a>
 	</li>
   </div></div>
 </ul>

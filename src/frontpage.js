@@ -17,8 +17,8 @@ export const FrontPage = () => {
             <Header /> <HeroImage />
       
     
-     
-     <OurWork /><div id="work"></div><WoodTypes />
+     <div id="work"></div>
+     <OurWork /><WoodTypes />
     <AboutUs />
   
     
