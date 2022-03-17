@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
 
 export const ImageReview = () => {
     const [Curb, setCurb] = useState([]);
@@ -20,6 +20,27 @@ export const ImageReview = () => {
        getCalendarInfo()
        
      }, [])
+     const scheduleEvent = (e) => {
+      e.preventDefault();
+  
+      axios.post(
+        "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/add-display-image/incoming_webhook/add-image",
+        
+      );
+      alert('Success! We will contact you shortly')
+     
+        
+      
+    };
+    const deleteImage = (e) => {
+      axios.delete(
+        "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/delete-image/incoming_webhook/delete",
+        
+      );
+      alert("it's deleted")
+
+
+    }
     //let stringTime = new Date().toString();
       if (Curb ) {
         return (
@@ -37,8 +58,8 @@ export const ImageReview = () => {
                     <div className="col-sm-4">
                    <img src={Curb.image} className="img-fluid" alt="Customer "></img>
                    </div></div>
-                  <button>Delete</button>
-                  <button>Submit</button>
+                  <button onClick={(e) =>deleteImage(e)}>Delete</button>
+                  <button onClick={(e) => scheduleEvent(e)}>Submit</button>
                   </div>
                 );
               })}

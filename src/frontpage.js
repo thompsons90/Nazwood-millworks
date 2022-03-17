@@ -26,7 +26,7 @@ export const FrontPage = () => {
        
        
      <Contact /><div id="contact"></div>
-  <Link to="/imagereview">Employee login</Link>
+  <Link to="/login">Employee login</Link>
     </div>
         </div>
     )
