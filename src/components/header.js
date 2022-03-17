@@ -29,7 +29,7 @@ export const Header = () => {
 	
   <div className="">
 <li class="nav-link">
-<h1 data-name="Our Work" className="nav-text" href="#work" onClick={() => setHidden(!hidden)}>Our work</h1>
+<h1 data-name="About Us" className="nav-text" href="#work" onClick={() => setHidden(!hidden)}>About Us</h1>
 	</li>
   </div>
 	<div className="">
@@ -39,7 +39,7 @@ export const Header = () => {
   </div>
 	<div className="">
 <li class="nav-link">
-		<h1 data-name="home"  className="nav-text">Home 2</h1>
+		<h1 data-name="Contact Us" className="nav-text" href="#contact" onClick={() => setHidden(!hidden)}>Contact Us</h1>
 	</li>
   </div></div>
 </ul>

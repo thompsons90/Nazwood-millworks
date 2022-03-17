@@ -91,7 +91,7 @@ exports = async function(payload, response) {
       <div className="reviews">
         <h3 className="work-text">Our past work</h3>
 
-        <div className="row">
+        <div className="row" >
           {Curb.map((Curb) => {
             return (
               <div className="">
@@ -128,7 +128,7 @@ exports = async function(payload, response) {
     );
   } else if (Curb) {
     return (
-      <div className="calendarPage">
+      <div className="">
         Something's wrong with your internet connection if you see this for more
         than a couple seconds.
       </div>

@@ -1,16 +1,17 @@
 import React from "react";
 
+import { Reviews } from './reviews';
 export const AboutUs = () => {
   return (
-    <div className="aboutPage container-fluid ">
+    <div className="aboutPage container-fluid wood-border">
       <h4 className="work-text">
         "Another quote"
       </h4>
       <div className="row">
-        <div className="col-sm-4">
-          <img src="./wood.jpg" className="img-fluid" alt="wood" />
+        <div className="col-sm-8 ">
+          <img src="./aboutus.jpg" className="img-fluid" alt="wood-working-professionals" />
         </div>
-        <div className="col-sm-8">
+        <div className="col-sm-4">
           <h4 className="work-text">
             {" "}
             Nazwood Millworks is a family-owned manufacturer of high quality
@@ -19,6 +20,9 @@ export const AboutUs = () => {
           </h4>
         </div>
       </div>
+      <h4 className="work-text">"They did a great job" -A customer</h4>
+      <Reviews />
+      <div  id="reviews"></div>
     </div>
   );
 };

@@ -4,14 +4,12 @@ import { WorkPopUp } from "../add-ons/workPopUp";
 import woodworking from '../images/Woodwork.jpg'
 export const OurWork = () => {
   return (
-    <div className="workPage container-fluid">
+    <div className="workPage container-fluid wood-border">
       <div className="row">
         <div className="col-sm-12">
           <h4 className="work-text">
             {" "}
-            Nazwood Millworks is a family-owned manufacturer of high quality
-            custom mouldings and millwork in the Inland Northwest. We are mill
-            direct for home builders, contractors, architects and designers.
+            The number 1 woodworker in spokane 
           </h4>
         </div>
         

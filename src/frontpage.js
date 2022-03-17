@@ -13,19 +13,19 @@ import { Link } from "react-router-dom";
 export const FrontPage = () => {
     return (
         <div>
-            <div className=" container-fluid">
+            <div className=" ">
             <Header /> <HeroImage />
-      <div id="work"></div>
+      
     
      
-     <OurWork /><WoodTypes />
+     <OurWork /><div id="work"></div><WoodTypes />
+    <AboutUs />
+  
     
-   <div id="reviews"></div>
-    <Reviews />
    
        
-       <div id="contact"></div>
-     <Contact />
+       
+     <Contact /><div id="contact"></div>
   <Link to="/imagereview">Employee login</Link>
     </div>
         </div>
