@@ -10,6 +10,7 @@ export const WoodTypes = () => {
           <b>Exotics available upon request</b>
         </div></div>
       </div>
+      <div id="about"></div>
     </div>
   );
 };

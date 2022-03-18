@@ -29,7 +29,7 @@ export const Header = () => {
 	
   <div className="">
 <li class="nav-link">
-<a data-name="About Us" className="nav-text" href="#work" onClick={() => setHidden(!hidden)}>About Us</a>
+<a data-name="About Us" className="nav-text" href="#about" onClick={() => setHidden(!hidden)}>About Us</a>
 	</li>
   </div>
 	<div className="">

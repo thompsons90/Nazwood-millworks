@@ -5,6 +5,7 @@ import axios from "axios";
 export const ImageReview = () => {
     const [Curb, setCurb] = useState([]);
     const [today, setToday] = useState(new Date())
+    const [image, setImage] = useState(null)
       async function getCalendarInfo() {
         const response = await fetch(
           "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/getEvents/incoming_webhook/getEvents"
@@ -20,12 +21,17 @@ export const ImageReview = () => {
        getCalendarInfo()
        
      }, [])
-     const scheduleEvent = (e) => {
-      e.preventDefault();
+     const SENDIT = (e) => {
+setImage(e)
+console.log(image)
+scheduleEvent(e)
+     }
+     const scheduleEvent = () => {
+     
   
       axios.post(
         "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/add-display-image/incoming_webhook/add-image",
-        
+        image
       );
       alert('Success! We will contact you shortly')
      
@@ -35,9 +41,9 @@ export const ImageReview = () => {
     const deleteImage = (e) => {
       axios.delete(
         "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/delete-image/incoming_webhook/delete",
-        
+        image
       );
-      alert("it's deleted")
+      alert("it's gone")
 
 
     }
@@ -59,7 +65,7 @@ export const ImageReview = () => {
                    <img src={Curb.image} className="img-fluid" alt="Customer "></img>
                    </div></div>
                   <button onClick={(e) =>deleteImage(e)}>Delete</button>
-                  <button onClick={(e) => scheduleEvent(e)}>Submit</button>
+                  <button onClick={() => SENDIT(Curb.image)}>Submit</button>
                   </div>
                 );
               })}

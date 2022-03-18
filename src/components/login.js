@@ -36,7 +36,7 @@ setUserArray(json.Curb[0]);
       }
     }
     return (
-        <div className="loginPage"><h3 className="text-center">Curb Appeal employee login 
+        <div className="loginPage"><h3 className="text-center">Nazwood Millworks Login
         <br /> The username is 'steve' and the password is 'password' both lowercase, we will change this later</h3>
         <br />
      
