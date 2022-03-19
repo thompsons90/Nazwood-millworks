@@ -24,7 +24,6 @@ export const ImageReview = () => {
      const SENDIT = (e) => {
 setImage(e)
 console.log(image)
-scheduleEvent(e)
      }
      const scheduleEvent = () => {
      
@@ -52,7 +51,9 @@ scheduleEvent(e)
         return (
           
           <div className="calendarPage">
+
             <Link to='/'>Back to front page </Link>
+            <div onClick={(e) => scheduleEvent(e)}>Submit the photo</div>
             <h1 className="text-center">Here you can approve or delete images. If you like them hit "Submit" if not, "Delete"</h1>
             {Curb.map((Curb) => {
                 return (
@@ -64,8 +65,8 @@ scheduleEvent(e)
                     <div className="col-sm-4">
                    <img src={Curb.image} className="img-fluid" alt="Customer "></img>
                    </div></div>
-                  <button onClick={(e) =>deleteImage(e)}>Delete</button>
-                  <button onClick={() => SENDIT(Curb.image)}>Submit</button>
+                  <button onClick={(e) =>deleteImage(e)} className="btn btn-danger">Delete</button>
+                  <button onClick={() => SENDIT(Curb.image)} className="btn btn-success">Select this </button>
                   </div>
                 );
               })}

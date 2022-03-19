@@ -8,6 +8,7 @@ import { OurWork } from './components/ourWork';
 import { Reviews } from './components/reviews';
 import {  WoodTypes } from './add-ons/woodtypes';
 import { Link } from "react-router-dom";
+import { Footer } from "./components/footer";
 
 
 export const FrontPage = () => {
@@ -25,8 +26,7 @@ export const FrontPage = () => {
    
        
        
-     <Contact /><div id="contact"></div>
-  <Link to="/login">Employee login</Link>
+    <Footer /><div id="contact"></div>
     </div>
         </div>
     )

@@ -128,10 +128,7 @@ background-size: 100% 100%;
 }
 
 /* navigation  */
-#about {
-  border: 1px solid green;
-  padding: -5rem;
-}
+
 .navigation {
   position: fixed;
   top: 0;
@@ -221,6 +218,7 @@ background-size: cover;
 .wood-border {
   border: 12px solid transparent;
   border-image: url('./images/woodTexture.jpg') 111 round;
+  border-bottom: none;
 }
 /* reviews  */
 
@@ -232,5 +230,34 @@ padding-top: 10rem;
 
 
 /* contact us */
-.contact {
+
+
+/* footer  */
+.footer{
+  background: #152F4F;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
 }
