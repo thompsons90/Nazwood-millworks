@@ -16,16 +16,20 @@ export const FrontPage = () => {
         <div>
             <div className=" ">
             <Header /> <HeroImage />
-      
-    
+      <div className="wood-border">
+          <div id="about"></div>
+          <AboutUs />
      <div id="work"></div>
      <OurWork /><WoodTypes />
-    <AboutUs />
+    
   
     
-   
+    <div  id="reviews"></div>
+     <Reviews />
+     
        
-       
+      </div>
+    
     <Footer /><div id="contact"></div>
     </div>
         </div>

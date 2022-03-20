@@ -31,7 +31,7 @@ export const Footer = () => {
     <div class="col copyright">
       <p class=""><small class="text-white-50">© 2022. All Rights Reserved.</small></p>
       
-  <Link to="/login">Employee login</Link>
+  <Link to="/login" className="employee-login">Employee login</Link>
     </div>
   </div>
 </div>

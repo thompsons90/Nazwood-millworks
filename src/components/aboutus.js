@@ -3,9 +3,9 @@ import React from "react";
 import { Reviews } from './reviews';
 export const AboutUs = () => {
   return (
-    <div className="aboutPage container-fluid wood-border">
+    <div className="aboutPage container-fluid ">
       <h4 className="work-text">
-        "Another quote"
+        
       </h4>
       <div className="row">
         <div className="col-sm-8 ">
@@ -20,9 +20,7 @@ export const AboutUs = () => {
           </h4>
         </div>
       </div>
-      <h4 className="work-text">"They did a great job" -A customer</h4>
-      <Reviews />
-      <div  id="reviews"></div>
+      
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { WorkPopUp } from "../add-ons/workPopUp";
 export const OurWork = () => {
   return (
-    <div className="workPage container-fluid wood-border">
+    <div className="workPage container-fluid ">
      
         
         <div className="container-fluid">
