@@ -1,19 +1,31 @@
-import React from 'react';
+import React, {useState, useEffect} from "react";
 
 function HeroImage() {
-    return(
-    <div className="HeroImage2">
-      
+const [number, setNumber] = useState(1)
+useEffect(() => {
+  const changeSlide = () => {
+    setTimeout(() => {
+      if (number < 4) {
+        console.log(number)
+setNumber(number + 1)
+      }
+      else  {
+        setNumber(number - 2)
+        console.log(number)
+      }
+
+  },3000)
+  }
+  changeSlide()
+  
+})
+  return (
+    <div className="hero-image-container">
      
-      {/* You can add more ".slideshow-image" elements, but remember to update the "$items" variable on SCSS */}
-      <div className="slideshow2">
-        <div
-          className="slideshow-image2"
-          
-        ></div>
-        <h1 className='hero-text'>NAZWOOD MILLWORKS</h1>
+      <div className={`slideshow2 slideshow${number}`}>
+       <h1 className="hero-text">NAZWOOD MILLWORKS</h1>
       </div>
-</div>
-    )
+    </div>
+  );
 }
-export default HeroImage
+export default HeroImage;
