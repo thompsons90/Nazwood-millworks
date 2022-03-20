@@ -10,8 +10,8 @@ export const OurWork = () => {
          <WorkPopUp /></div>
     <h4 className="work-text">
         {" "}
-        “From our Mill to your job-site <br />
-        Quality and Service is our Passion.”
+        We offer Walnut, White oak, Poplar, Alder, Cherry, Maple, Hickory <br /> 
+          <b>Exotics available upon request</b>
       
       </h4>
     </div>
