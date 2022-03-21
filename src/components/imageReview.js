@@ -21,7 +21,8 @@ export const ImageReview = () => {
        getCalendarInfo()
        
      }, [])
-     const SENDIT = (e) => {
+    
+     const selectImage = (e) => {
 setImage(e)
 console.log(image)
      }
@@ -37,7 +38,7 @@ console.log(image)
         
       
     };
-    const deleteImage = (e) => {
+    const deleteImage = () => {
       axios.delete(
         "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/delete-image/incoming_webhook/delete",
         image
@@ -66,7 +67,8 @@ console.log(image)
                    <img src={Curb.image} className="img-fluid" alt="Customer "></img>
                    </div></div>
                   <button onClick={(e) =>deleteImage(e)} className="btn btn-danger">Delete</button>
-                  <button onClick={() => SENDIT(Curb.image)} className="btn btn-success">Select this </button>
+                  <button onClick={(e) => scheduleEvent(e)} className="btn btn-success">Display this image</button>
+                  <button onClick={() => selectImage(Curb.image)} className="btn btn-warning">Select this </button>
                   </div>
                 );
               })}
