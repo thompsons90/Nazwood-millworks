@@ -5,6 +5,7 @@ export const OurWork = () => {
     <div className="workPage container-fluid ">
      
         <h2 className="work-text">Services we offer</h2>
+        <p className="work-text">Hover to learn more</p>
         <div className="container-fluid">
         
          <WorkPopUp /></div>

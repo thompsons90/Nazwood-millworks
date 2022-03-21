@@ -1,14 +1,22 @@
 .work-subtitle {
    margin: auto;
-   text-align: center;
+   display: flex;
+   -webkit-text-stroke-width: 1.2px;
+             -webkit-text-stroke-color: black;
+             color: white;
+             font-size: 0;
+             font-weight: bolder;
+             width: 100%;
+             height: 100%;
 }
-
+.work-subtitle:hover {
+font-size:  3vh;
+}
 .our-work-title {
    display: flex;
    justify-content: center;
    align-items: center;
    font-size: 5vh;
-   z-index: 6;
    color: white;
    -webkit-text-stroke-width: 3px;
              -webkit-text-stroke-color: black;
@@ -18,6 +26,7 @@ background-image: url('../images/work/trim.JPG');
 background-size: 100% 100%;
 height: 50vh;
 width: 100%;
+
  }
  .moulding {
    background-image: url('../images/work/moulding.jpg');

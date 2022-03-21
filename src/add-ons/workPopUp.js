@@ -7,7 +7,8 @@ export const WorkPopUp = () => {
         <div className="col-sm-4 ">
           <div className="trim">
             <h3 className="work-text  our-work-title">TRIM</h3>
-          </div><div className="work-subtitle">
+          
+          <div className="work-subtitle">
             <ul>
               <li>Face Frame </li>
 
@@ -25,27 +26,28 @@ export const WorkPopUp = () => {
 
               <li>Custom furniture</li>
             </ul>
-          </div>
+          </div></div>
         </div>
         <div className="col-sm-4">
           <div className="moulding">
             <h3 className="work-text  our-work-title">MOULDING</h3>
-          </div><div className="work-subtitle">
-            <ul>
-              <li> Crown </li>
+            <div className="work-subtitle">
+              <ul>
+                <li> Crown </li>
 
-              <li>Base </li>
+                <li>Base </li>
 
-              <li>Case </li>
+                <li>Case </li>
 
-              <li>Trim packages</li>
+                <li>Trim packages</li>
 
-              <li>Custom profiles</li>
+                <li>Custom profiles</li>
 
-              <li>Historic reproduction</li>
+                <li>Historic reproduction</li>
 
-              <li>Arches</li>
-            </ul>
+                <li>Arches</li>
+              </ul>
+            </div>{" "}
           </div>
         </div>
         <div className="col-sm-4">
@@ -53,7 +55,8 @@ export const WorkPopUp = () => {
             <h3 className="work-text our-work-title">
               SUPERIOR CRAFTED CABINETS
             </h3>
-          </div>  <div className="work-subtitle">
+          {" "}
+          <div className="work-subtitle">
             <ul>
               <li> Shiplap </li>
 
@@ -65,12 +68,9 @@ export const WorkPopUp = () => {
 
               <li>S4S</li>
             </ul>
-          </div>
+          </div></div>
         </div>
       </div>
-     
-      
-      
     </div>
   );
 };
