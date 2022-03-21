@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Reviews } from './reviews';
 export const AboutUs = () => {
   return (
     <div className="aboutPage container-fluid ">
