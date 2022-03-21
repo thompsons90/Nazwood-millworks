@@ -74,7 +74,7 @@ height: 90vh;
  
   position:fixed; left: 0; bottom: 0; width: 100vw; margin: 0;
  height: 100vh;
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url('./images/woodBackground.jpg');
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),url('./images/woodBackgroundBest.png');
 background-size: 100% 100%;
   z-index: 95;
 }
@@ -225,6 +225,7 @@ ul {
 background-size: 100%;
 background-position: center;
 background-repeat: no-repeat;
+
 background-size: cover;
 }
 .wood-types {
@@ -236,7 +237,7 @@ background-size: cover;
 .wood-border {
   border: 12px solid transparent;
   border-image: url('./images/woodTexture.jpg') 111 round;
- 
+ border-bottom: none;
 }
 /* reviews  */
 
