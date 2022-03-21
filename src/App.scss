@@ -42,18 +42,19 @@ height: 90vh;
 }
 .slideshow1 {
   background-image: url('./images/slideshow/3.jpg');
+  background-size: 100% 100%;
 }
 .slideshow2 {
   background-image: url('./images/slideshow/2.jpg');
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .slideshow3 {
   background-image: url('./images/slideshow/Woodwork.jpg');
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .slideshow4 {
   background-image: url('./images/slideshow/3.jpg');
- background-size: cover
+  background-size: 100% 100%;
 }
 .hero-text {
   text-align: center;

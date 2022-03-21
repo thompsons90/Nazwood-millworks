@@ -2,24 +2,24 @@ import React, {useState, useEffect} from "react";
 
 function HeroImage() {
 const [number, setNumber] = useState(1)
-const [text, setText] = useState(null)
+const [text, setText] = useState("Very first quote")
 useEffect(() => {
   const changeSlide = () => {
     setTimeout(() => {
       if (number < 4) {
         console.log(number)
         setText(
-          'Quote about how great the business is '
+          'Second quote'
         )
 setNumber(number + 1)
       }
       else  {
         setNumber(number - 2)
         console.log(number)
-        setText('Another quote')
+        setText('Third')
       }
       if (number === 3) {
-        setText('futher quotes')
+        setText('Forth')
       }
 
   },3000)
