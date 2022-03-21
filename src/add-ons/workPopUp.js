@@ -5,7 +5,7 @@ export const WorkPopUp = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-sm-4">
-          <h3 className="work-text">Trim</h3>
+          <h3 className="work-text">TRIM</h3>
           <img src='./wood.jpg' alt='wood' className="img-fluid" />
           
           <div className="work-subtitle">
@@ -22,35 +22,45 @@ export const WorkPopUp = () => {
             </ul>
           </div></div>
           <div className="col-sm-4">
-          <h3 className="work-text">Moulding</h3>
+          <h3 className="work-text">MOULDING</h3>
           <img src='./wood.jpg' alt='wood' className="img-fluid" />
           <div className="work-subtitle">
             <ul>
-              <li> Shiplap </li>
+              <li> Crown </li>
 
-              <li>Tongue & Groove </li>
+              <li>Base </li>
 
-              <li>Custom Flooring </li>
+              <li>Case </li>
 
-              <li>Face Frame stock </li>
+              <li>Trim packages</li>
 
-              <li>S4S</li>
+              <li>Custom profiles</li>
+              
+              <li>Historic reproduction</li>
+              
+              <li>Arches</li>
             </ul>
           </div></div>
           <div className="col-sm-4">
-          <h3 className="work-text">Cabniets</h3>
+          <h3 className="work-text">SUPERIOR CRAFTED CABINETS</h3>
           <img src='./wood.jpg' alt='wood' className="img-fluid" />
           <div className="work-subtitle">
             <ul>
-              <li> Shiplap </li>
+            <li>Face Frame </li>
 
-              <li>Tongue & Groove </li>
+<li>Euro </li>
 
-              <li>Custom Flooring </li>
+<li>Multi-family </li>
 
-              <li>Face Frame stock </li>
+<li>Entertainment Centers</li>
 
-              <li>S4S</li>
+<li>Closets</li>
+
+<li>Garage</li>
+
+<li>Vanities</li>
+
+<li>Custom furniture</li>
             </ul>
           </div></div>
         

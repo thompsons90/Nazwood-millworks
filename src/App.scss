@@ -1,6 +1,6 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -11,14 +11,9 @@ body::-webkit-scrollbar {
 .pointer {
   cursor: pointer;
 }
-/* ken burns effect */
 /* homepage effects */
 
-.kenBox {
-  text-align: center;
-  padding-top: 1rem;
-}
-.slideshow2 {
+.slideshow-master {
   position: relative;
 
 height: 90vh;
@@ -104,6 +99,9 @@ background-size: 100% 100%;
   -webkit-text-stroke-width: 3px;
             -webkit-text-stroke-color: black;
             text-decoration: none;
+            display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .nav-text:hover {
@@ -126,20 +124,19 @@ background-size: 100% 100%;
 /* line that cuts between the word */ 
 .nav-text::after {
 	content: "";
-	height: 8%;
+	height: 4%;
 	width: 0;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  margin-left: auto;
+    margin-right: auto;
 	background-image: url('./images/woodBackground.jpg');
   border-radius: 50%;
 	transition: all 400ms ease; /* line */ 
   z-index: 6;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg);
 }
 .nav-text:hover::after {
 	width: 120%;
@@ -212,7 +209,9 @@ ul {
   
 }
 
-
+.about-text {
+  font-size: 4vh;
+}
 /* contact us */ 
 
 .wood-background {
@@ -253,7 +252,7 @@ padding-top: 2rem;
 /* footer  */
 .footer{
   background: white;
-  color:black;
+  color: black;
   
   .links{
     ul {list-style-type: none;}
