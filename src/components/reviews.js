@@ -60,7 +60,7 @@ export const Reviews = () => {
       .then(() => {
         alert("Thank you for your photo! ");
         setImage(null);
-        
+
       });
     
   
@@ -96,15 +96,17 @@ exports = async function(payload, response) {
         <div className="row" >
           {Curb.map((Curb) => {
             return (
-              <div className="">
-                <div className="col-sm-4" key={Curb._id}>
+              <div className="col-sm-4">
+                
                   <img
                     src={Curb.image} 
-                    className="img-fluid"
+                    key={Curb._id}
+                    className="review-image"
                     alt="Review"
+                  
                   ></img>
                 </div>
-              </div>
+              
             );
           })}{" "}
         </div>

@@ -19,16 +19,14 @@ export const ImageReview = () => {
     getCalendarInfo();
   }, []);
 
-const setTheImage = () => {
- setImage(Curb.image);
-}
+
   const sendImage = (image) => {
  setImage(image)
     let data = {
      
       image: image,
     };
-
+image !== null ? 
     axios
       .post(
         "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/add-display-image/incoming_webhook/add-image",
@@ -39,7 +37,9 @@ const setTheImage = () => {
         console.log("s'all gud")
         
         
-      });
+      })
+    : 
+      console.log('image no work')
     
   
   }
@@ -59,23 +59,25 @@ const setTheImage = () => {
   //let stringTime = new Date().toString();
   if (Curb) {
     return (
-      <div className="calendarPage">
+      <div className="calendarPage container-fluid">
         <Link to="/">Back to front page </Link>
         <div onClick={(e) => sendImage(e)}>Submit the photo</div>
         <h1 className="text-center">
-          Here you can approve or delete images.
+          Images that have been submitted 
         </h1>
+        <div className="row">
         {Curb.map((Curb) => {
+          
           return (
-            <div className="container-fluid">
-              <div className="yes" key={Curb.Name}>
-                <div className="col-sm-4">
+            <div className="col-sm-4">
+              <div className="" key={Curb.Name}>
+                
                   <img
                     src={Curb.image}
-                    className="img-fluid"
+                    className="review-image"
                     alt="Customer "
                   ></img>
-                </div>
+                
               </div>
               <button
                 onClick={(_id) => deleteImage(Curb._id)}
@@ -84,7 +86,7 @@ const setTheImage = () => {
                 Delete
               </button>
               <button
-                onClick={(image) => sendImage(Curb.image)}
+                onClick={() => sendImage(Curb.image)}
                 
                 className="btn btn-success"
               >
@@ -94,7 +96,7 @@ const setTheImage = () => {
             </div>
           );
         })}
-      </div>
+      </div></div>
     );
   } else if (Curb) {
     return (
