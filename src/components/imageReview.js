@@ -4,6 +4,7 @@ import axios from "axios";
 
 export const ImageReview = () => {
   const [Curb, setCurb] = useState([]);
+  const [displayImage, setDisplayImages] = useState([])
   const [image, setImage] = useState(null);
   async function getCalendarInfo() {
     const response = await fetch(
@@ -14,9 +15,18 @@ export const ImageReview = () => {
     setCurb(json.Curb);
     
   }
+  async function getDisplayedImages() {
+    const response = await fetch(
+      "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/get-display-images/incoming_webhook/getImages"
+    );
+    const json = await response.json();
 
+    setDisplayImages(json.Curb);
+    //console.log(Curb)
+  }
   useEffect(() => {
     getCalendarInfo();
+    getDisplayedImages();
   }, []);
 
 
@@ -96,7 +106,45 @@ image !== null ?
             </div>
           );
         })}
-      </div></div>
+      </div>
+      <h1 className="text-center">
+         Images that are already being displayed 
+        </h1>
+      <div className="row">
+      {displayImage.map((Curb) => {
+          
+          return (
+            <div className="col-sm-4">
+              <div className="" key={Curb.Name}>
+                
+                  <img
+                    src={Curb.image}
+                    className="review-image"
+                    alt="Customer "
+                  ></img>
+                
+              </div>
+              <button
+                onClick={(_id) => deleteImage(Curb._id)}
+                className="btn btn-danger"
+              >
+                Delete
+              </button>
+              <button
+                onClick={() => sendImage(Curb.image)}
+                
+                className="btn btn-success"
+              >
+                Display this image
+              </button>
+             
+            </div>
+          );
+        })}
+      </div>
+      
+      
+      </div>
     );
   } else if (Curb) {
     return (
