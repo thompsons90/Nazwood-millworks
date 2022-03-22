@@ -4,7 +4,6 @@ import axios from "axios";
 
 export const ImageReview = () => {
   const [Curb, setCurb] = useState([]);
-  const [today, setToday] = useState(new Date());
   const [image, setImage] = useState(null);
   async function getCalendarInfo() {
     const response = await fetch(
@@ -13,20 +12,37 @@ export const ImageReview = () => {
     const json = await response.json();
 
     setCurb(json.Curb);
-    //console.log(Curb)
+    
   }
 
   useEffect(() => {
     getCalendarInfo();
   }, []);
 
+const setTheImage = () => {
+ setImage(Curb.image);
+}
+  const sendImage = (image) => {
+ setImage(image)
+    let data = {
+     
+      image: image,
+    };
 
-  const sendImage = (_id) => {
-    axios.post(
-      `https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/add-display-image/incoming_webhook/add-image?_id=${_id}`
-    );
-    alert("Success! We will contact you shortly");
-  };
+    axios
+      .post(
+        "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/add-display-image/incoming_webhook/add-image",
+        data,
+        console.log(image)
+      )
+      .then(() => {
+        console.log("s'all gud")
+        
+        
+      });
+    
+  
+  }
   const deleteImage = (_id) => {
     axios
       .delete(
@@ -34,6 +50,7 @@ export const ImageReview = () => {
       )
       .then(() => {
         console.log("deleted");
+        window.location.reload();
       })
       .catch((error) => {
         console.log(error);
@@ -46,8 +63,7 @@ export const ImageReview = () => {
         <Link to="/">Back to front page </Link>
         <div onClick={(e) => sendImage(e)}>Submit the photo</div>
         <h1 className="text-center">
-          Here you can approve or delete images. If you like them hit "Submit"
-          if not, "Delete"
+          Here you can approve or delete images.
         </h1>
         {Curb.map((Curb) => {
           return (
@@ -68,7 +84,8 @@ export const ImageReview = () => {
                 Delete
               </button>
               <button
-                onClick={(_id) => sendImage(Curb._id)}
+                onClick={(image) => sendImage(Curb.image)}
+                
                 className="btn btn-success"
               >
                 Display this image
@@ -88,3 +105,23 @@ export const ImageReview = () => {
     );
   }
 };
+
+/* 
+exports = async function(payload, response) {
+
+  if (payload.body) {
+      const body =  EJSON.parse(payload.body.text());
+      const reviews = context.services.get("mongodb-atlas").db("Curb").collection("Customer_event");
+      
+      const reviewDoc = {
+          
+       _id: BSON.ObjectId(payload.query._id)
+          
+      };
+  
+      return await reviews.insertOne(reviewDoc);
+  }
+
+  return  {};
+};
+*/

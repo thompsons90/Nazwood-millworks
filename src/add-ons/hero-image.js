@@ -7,7 +7,6 @@ useEffect(() => {
   const changeSlide = () => {
     setTimeout(() => {
       if (number < 4) {
-        console.log(number)
         setText(
           'Second quote'
         )
@@ -15,7 +14,6 @@ setNumber(number + 1)
       }
       else  {
         setNumber(number - 2)
-        console.log(number)
         setText('Third')
       }
       if (number === 3) {
