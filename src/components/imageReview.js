@@ -38,15 +38,18 @@ console.log(image)
         
       
     };
-    const deleteImage = () => {
-      axios.delete(
-        "https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/delete-image/incoming_webhook/delete",
-        image
-      );
-      alert("it's gone")
-
-
-    }
+    const deleteImage = (_id) => {
+      axios
+        .delete(
+          `https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/delete-image/incoming_webhook/delete?_id=${_id}`
+        )
+        .then(() => {
+          console.log('deleted')
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+      }
     //let stringTime = new Date().toString();
       if (Curb ) {
         return (
@@ -66,7 +69,7 @@ console.log(image)
                     <div className="col-sm-4">
                    <img src={Curb.image} className="img-fluid" alt="Customer "></img>
                    </div></div>
-                  <button onClick={(e) =>deleteImage(e)} className="btn btn-danger">Delete</button>
+                  <button onClick={(_id) =>deleteImage(Curb._id)} className="btn btn-danger">Delete</button>
                   <button onClick={(e) => scheduleEvent(e)} className="btn btn-success">Display this image</button>
                   <button onClick={() => selectImage(Curb.image)} className="btn btn-warning">Select this </button>
                   </div>
