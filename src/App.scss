@@ -1,5 +1,6 @@
 body {
-  background-color: whitesmoke;
+  background-image: url('./textures/palewood.jpg');
+  background-size: auto;
   color: black;
 }
 body::-webkit-scrollbar {
@@ -233,7 +234,7 @@ ul {
   color: white;
   margin-top: 10rem;
 }
-.wood-border {
+/*.wood-border {
   border: 12px solid transparent;
   border-image: url("./images/woodTexture.jpg") 111 round;
   border-bottom: none;
