@@ -66,32 +66,10 @@ export const Reviews = () => {
   
   }
 
-  /*  pets webhook
-exports = async function(payload, response) {
-
-  if (payload.body) {
-      const body =  EJSON.parse(payload.body.text());
-      const reviews = context.services.get("mongodb-atlas").db("pets").collection("my_pets");
-      
-      const reviewDoc = {
-          pet: body.pet,
-          breed: body.breed,
-          user: body.user,
-         image: body.image,
-          desc: body.desc,
-          
-      };
-  
-      return await reviews.insertOne(reviewDoc);
-  }
-
-  return  {};
-};
-*/
   if (Curb) {
     return (
       <div className="reviews">
-        <h3 className="work-text">Our past work</h3>
+        <h3 className="work-text">Photos from our customers</h3>
 
         <div className="row" >
           {Curb.map((Curb) => {

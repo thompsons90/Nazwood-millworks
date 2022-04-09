@@ -1,5 +1,5 @@
 import React from "react";
-import {WorkPopUp} from "../add-ons/workPopUp";
+import{ WorkPopUp } from "../add-ons/workPopUp";
 export const OurWork = () => {
   return (
     <div className="workPage container-fluid ">

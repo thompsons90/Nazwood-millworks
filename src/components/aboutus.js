@@ -8,7 +8,7 @@ export const AboutUs = () => {
       </h4>
       <div className="row">
         <div className="col-sm-8 ">
-          <img src="./aboutus.jpg" className="img-fluid" alt="wood-working-professionals" />
+          <img src="./hisphotos/kitchen2.jpg" className="img-fluid"  alt="wood-working-professionals" />
         </div>
         <div className="col-sm-4">
           <h4 className="work-text about-text">

@@ -194,6 +194,10 @@ body::-webkit-scrollbar {
 .work-text {
   padding: 2rem;
   text-align: center;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-decoration: none;
 }
 .slideshow-image {
   width: 100%;
