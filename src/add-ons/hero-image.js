@@ -1,37 +1,18 @@
 import React, {useState, useEffect} from "react";
-
+import './/hero-image.scss'
 function HeroImage() {
-const [number, setNumber] = useState(1)
-const [text, setText] = useState("Very first quote")
-useEffect(() => {
-  const changeSlide = () => {
-    setTimeout(() => {
-      if (number < 4) {
-        setText(
-          'Second quote'
-        )
-setNumber(number + 1)
-      }
-      else  {
-        setNumber(number - 2)
-        setText('Third')
-      }
-      if (number === 3) {
-        setText('Forth')
-      }
 
-  },3000)
-  }
-  changeSlide()
-  
-})
   return (
-    <div className="hero-image-container">
-     
-      <div className={`slideshow-master slideshow${number}`}>
-       <h1 className="hero-text ">{text}</h1>
-      </div>
-    </div>
+    <div className=""><div className="slideshow-container"></div>
+    <ul className="slideshow">
+  <li><span>Image 01</span><div><h3>A little something something</h3></div></li>
+  <li><span>Image 02</span><div><h3>A little something something</h3></div></li>
+  <li><span>Image 03</span><div><h3>A little something something</h3></div></li>
+  <li><span>Image 04</span></li>
+  <li><span>Image 05</span></li>
+  <li><span>Image 06</span></li>
+</ul>
+  </div>
   );
 }
 export default HeroImage;
