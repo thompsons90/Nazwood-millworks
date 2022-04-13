@@ -93,11 +93,26 @@ $bp-lg: 800px;
     $i: index($imageIds, $id);
     
     &:nth-child(#{$i}):before {
-      background-image: url(../images/woodVariety.jpg);
+     //background-image: url(../images/woodVariety.jpg);
     }
   }
 }
-
+.kitchens {
+  background-image: url(../images/work/cabinets.jpg);
+  background-size: 100% 100%;
+}
+.moulding {
+  background-image: url(../images/work/moulding.jpg);
+  background-size: 100% 100%;
+}
+.trim {
+  background-image: url(../images/work/trim.JPG);
+  background-size: 100% 100%;
+}
+.stairs {
+  background-image: url(../images/work/stairs.jpg);
+  background-size: 100% 100%;
+}
 .content {
   position: relative;
   display: flex;

@@ -2,6 +2,7 @@ body {
   background-image: url('./textures/palewood.jpg');
   background-size: auto;
   color: black;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   display: none;

@@ -7,7 +7,8 @@ export const AboutUs = () => {
         
       </h4>
       <div className="row">
-        <div className="col-sm-8 ">
+        <div className="col-sm-2"></div>
+        <div className="col-sm-4 ">
           <img src="./hisphotos/kitchen2.jpg" className="img-fluid"  alt="wood-working-professionals" />
         </div>
         <div className="col-sm-4">
@@ -19,7 +20,7 @@ export const AboutUs = () => {
           </h4>
         </div>
       </div>
-      
+      <div className="col-sm-2"></div>
     </div>
   );
 };
