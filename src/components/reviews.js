@@ -91,7 +91,7 @@ export const Reviews = () => {
         <div>
           {" "}
           <h3 onClick={() => setActive(!active)} className="work-text pointer">
-            Submit your own photo
+          SHARE YOUR FINISHED SPACE!
           </h3>
           <div className={active === true ? `text-center` : `hidden`}>
             <input
@@ -103,6 +103,7 @@ export const Reviews = () => {
             <button className={image === null ? `hidden` : `yes`} onClick={(e) => scheduleEvent(e)}>
               Submit photo
             </button>
+            <button>See all photos</button>
             {/* {image === null ? `hidden` : `yes`} */}
           </div>
         </div>
