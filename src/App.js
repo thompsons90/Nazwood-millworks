@@ -8,6 +8,10 @@ import {
 } from "react-router-dom";
 import { ImageReview } from './components/imageReview';
 import { Login } from './components/login';
+import { Cabinets } from './detail-pages/cabinets';
+import { Trim } from './detail-pages/Trim';
+import { Moulding } from './detail-pages/Moulding';
+import { Misc } from './detail-pages/misc';
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +19,10 @@ function App() {
    <Route path="/" element={<FrontPage />} />
    <Route path="/login" element={<Login />} />
    <Route path="/imagereview" element={<ImageReview />} />
+   <Route path="/cabinets" element={<Cabinets />} />
+   <Route path="/trim" element={<Trim />} />
+   <Route path="/moulding" element={<Moulding />} />
+   <Route path="/misc" element={<Misc />} />
     </Routes>
     </BrowserRouter>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import ".//workPopUp.scss";
-
+import { Link } from "react-router-dom";
 export const WorkPopUp = () => {
   return (
     <main class="page-content container-fluid">
@@ -8,7 +8,7 @@ export const WorkPopUp = () => {
     <div class="content">
       <h2 class="title">Cabinets</h2>
       <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-      <button class="btn">View Trips</button>
+      <Link to="/cabinets"><button class="btn">View all our cabinet work</button></Link>
     </div>
   </div>
   <div class="card trim">

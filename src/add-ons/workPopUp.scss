@@ -153,9 +153,7 @@ $bp-lg: 800px;
   background-color: black;
   border: none;
   
-  &:hover {
-    background-color: lighten(black, 5%);
-  }
+
   
   &:focus {
     outline: 1px dashed yellow;
