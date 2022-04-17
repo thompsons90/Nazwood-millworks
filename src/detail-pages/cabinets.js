@@ -1,7 +1,9 @@
 import React, {useState} from "react"
 import { Header } from "../components/header"
 export const Cabinets = () => {
-    const [images, setImages] = []
+    const [images, setImages] = [{
+        image: ""
+    }]
     return (
         <div>
             <Header />

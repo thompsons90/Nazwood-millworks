@@ -70,7 +70,7 @@ export const Reviews = () => {
     return (
       <div className="reviews">
         <h3 className="work-text">Do you have a finished space using Nazwood Millworks? We'd love to see it!</h3>
-<h5 className="work-text"><Link to="/allphotos">See all photos</Link></h5>
+<h5 className="work-text"><Link to="/allphotos" className="work-text">See all photos</Link></h5>
         <div className="row" >
           {Curb.slice(0,3).map((Curb) => {
             return (
