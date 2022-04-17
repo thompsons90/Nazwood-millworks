@@ -3,7 +3,7 @@ import{ WorkPopUp } from "../add-ons/workPopUp";
 export const OurWork = () => {
   return (
     <div className="workPage container-fluid ">
-     
+        
         <h2 className="work-text">Services we offer</h2>
         <div className="container-fluid">
         
