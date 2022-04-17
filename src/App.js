@@ -12,6 +12,7 @@ import { Cabinets } from './detail-pages/cabinets';
 import { Trim } from './detail-pages/Trim';
 import { Moulding } from './detail-pages/Moulding';
 import { Misc } from './detail-pages/misc';
+import { Allphotos } from './detail-pages/allphotos';
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
    <Route path="/trim" element={<Trim />} />
    <Route path="/moulding" element={<Moulding />} />
    <Route path="/misc" element={<Misc />} />
+   <Route path="/allphotos" element={<Allphotos />} />
     </Routes>
     </BrowserRouter>
   );

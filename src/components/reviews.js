@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 export const Reviews = () => {
   const [Curb, setCurb] = useState([]);
   const [active, setActive] = useState(false);
@@ -69,8 +69,8 @@ export const Reviews = () => {
   if (Curb) {
     return (
       <div className="reviews">
-        <h3 className="work-text">Photos from our customers</h3>
-
+        <h3 className="work-text">Do you have a finished space using Nazwood Millworks? We'd love to see it!</h3>
+<h5 className="work-text"><Link to="/allphotos">See all photos</Link></h5>
         <div className="row" >
           {Curb.map((Curb) => {
             return (
@@ -91,7 +91,7 @@ export const Reviews = () => {
         <div>
           {" "}
           <h3 onClick={() => setActive(!active)} className="work-text pointer">
-          SHARE YOUR FINISHED SPACE!
+         Submit your own photo
           </h3>
           <div className={active === true ? `text-center` : `hidden`}>
             <input
