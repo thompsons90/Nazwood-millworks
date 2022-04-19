@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import { ImageReview } from './components/imageReview';
 import { Login } from './components/login';
-import { Cabinets } from './detail-pages/cabinets';
+import  {Cabinets } from './detail-pages/cabinets';
 import { Trim } from './detail-pages/Trim';
 import { Moulding } from './detail-pages/Moulding';
 import { Misc } from './detail-pages/misc';

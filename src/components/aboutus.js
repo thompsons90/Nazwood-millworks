@@ -9,7 +9,7 @@ export const AboutUs = () => {
       <div className="row">
         <div className="col-sm-2"></div>
         <div className="col-sm-4 ">
-          <img src="./hisphotos/kitchen2.jpg" className="img-fluid"  alt="wood-working-professionals" />
+          <img src="./makingmoulding.jpg" className="img-fluid"  alt="wood-working-professionals" />
         </div>
         <div className="col-sm-4">
           <h4 className="work-text about-text">
