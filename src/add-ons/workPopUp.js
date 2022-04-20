@@ -32,7 +32,7 @@ export const WorkPopUp = () => {
       </div>
       <div class="card trim"><h1 class="text-center card-title">Trim and boards</h1>
         <div class="content">
-        
+        <Link to="/trim"><button class="btn">View trims </button></Link>
           <p class="copy"> We offer <br />
             Crown
             Shiplap
@@ -44,12 +44,12 @@ export const WorkPopUp = () => {
             Face Frame stock
 
             S4S</p>
-          <Link to="/trim"><button class="btn">View Trips</button></Link>
+          
         </div>
       </div>
       <div class="card moulding"><h1 class="text-center card-title">Moulding</h1>
         <div class="content">
-        
+         <Link to="/moulding"><button class="btn">View all our moulding work</button></Link>
           <p class="copy">Crown
 
             Base
@@ -65,15 +65,15 @@ export const WorkPopUp = () => {
             Arches
 
             Stair Parts</p>
-          <Link to="/moulding"><button class="btn">Book Now</button></Link>
+         
         </div>
       </div>
       <div class="card stairs"><h1 class="text-center card-title">Other work</h1>
         <div class="content">
-        
+         <Link to="/misc"><button class="btn">See Wood work</button></Link>
           <p class="copy">We offer <br />
             I don't know what to put here</p>
-          <Link to="/misc"><button class="btn">Book Now</button></Link>
+         
         </div>
       </div>
     </main>

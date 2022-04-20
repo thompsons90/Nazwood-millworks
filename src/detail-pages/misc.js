@@ -9,33 +9,44 @@ export const Misc = () => {
             <div className="row">
                 
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/cabinets1.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/misc/dresser.jpg" className="img-fluid work-photo" alt="cabinets" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work10.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/misc/misc1.jpg" className="img-fluid work-photo" alt="cabinets" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work11.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/misc/misc2.jpg" className="img-fluid work-photo" alt="cabinets" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work12.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/misc/misc3.jpg" className="img-fluid work-photo" alt="cabinets" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work13.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/misc/thumbnail_IMG_3910.jpg" className="img-fluid work-photo" alt="cabinets" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work14.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/misc/work7.jpg" className="img-fluid work-photo" alt="cabinets" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work15.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/misc/work8.jpg" className="img-fluid work-photo" alt="cabinets" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work16.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/misc/work9.jpg" className="img-fluid work-photo" alt="cabinets" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work17.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/misc/work18.jpg" className="img-fluid work-photo" alt="cabinets" />
                 </div>
-                
+                <div className="col-sm-4">
+                    <img src="/hisphotos/misc/work19.jpg" className="img-fluid work-photo" alt="cabinets" />
+                </div>
+                <div className="col-sm-4">
+                    <img src="/hisphotos/misc/work20.jpg" className="img-fluid work-photo" alt="cabinets" />
+                </div>
+                <div className="col-sm-4">
+                    <img src="/hisphotos/misc/work21.jpg" className="img-fluid work-photo" alt="cabinets" />
+                </div>
+                <div className="col-sm-4">
+                    <img src="/hisphotos/misc/work22.jpg" className="img-fluid work-photo" alt="cabinets" />
+                </div>
             </div>
             <Link to="/" className="work-text">Back to home page</Link>
 
