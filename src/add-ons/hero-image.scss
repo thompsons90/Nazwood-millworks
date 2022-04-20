@@ -95,6 +95,9 @@
 	color: rgba(255,255,255, 0.8);
 }
 // image-start
+.slideshow li span {
+width: 100vw;
+}
 .slideshow li:nth-child(1) span { background-image: url(../images/slideshow/splice2test.png) }
 .slideshow li:nth-child(2) span {
     background-image: url(../images/slideshow/bathroom.jpg);

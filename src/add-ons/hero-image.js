@@ -3,7 +3,7 @@ import './/hero-image.scss'
 function HeroImage() {
 
   return (
-    <div className=""><div className="slideshow-container"></div>
+    <div className=""><div className="slideshow-container container-fluid"></div>
     <ul className="slideshow">
   <li><span>Image 01</span><div><h3>Nazwood millworks</h3></div></li>
   <li><span>Image 02</span><div></div></li>
