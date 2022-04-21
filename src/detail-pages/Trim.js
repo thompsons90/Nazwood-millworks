@@ -9,32 +9,30 @@ export const Trim = () => {
             <div className="row">
                 
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/cabinets1.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="/hisphotos/trim/milling2.jpg" className="img-fluid work-photo" alt="work-trim" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work10.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="hisphotos/trim/milling4.jpg" className="img-fluid work-photo" alt="work-trim" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work11.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="hisphotos/trim/Moulding1.jpg" className="img-fluid work-photo" alt="work-trim" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work12.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="hisphotos/trim/Moulding2.jfif" className="img-fluid work-photo" alt="work-trim" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work13.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="hisphotos/trim/trim1.jpg" className="img-fluid work-photo" alt="work-trim" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work14.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="hisphotos/trim/trim3.jpg" className="img-fluid work-photo" alt="work-trim" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work15.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="hisphotos/trim/trimphoto.jpg" className="img-fluid work-photo" alt="work-trim" />
                 </div>
                 <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work16.jpg" className="img-fluid work-photo" alt="cabinets" />
+                    <img src="hisphotos/trim/woodcutouts.jpg" className="img-fluid work-photo" alt="work-trim" />
                 </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/cabinets/work17.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
+                
                 
             </div>
             <Link to="/" className="work-text">Back to home page</Link>

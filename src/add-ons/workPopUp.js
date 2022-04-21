@@ -30,7 +30,7 @@ export const WorkPopUp = () => {
 
         </div>
       </div>
-      <div class="card trim"><h1 class="text-center card-title">Trim and boards</h1>
+      <div class="card trim"><h1 class="text-center card-title">Trim, Boards, and Moulding</h1>
         <div class="content">
         <Link to="/trim"><button class="btn">View trims </button></Link>
           <p class="copy"> We offer <br />
@@ -47,9 +47,9 @@ export const WorkPopUp = () => {
           
         </div>
       </div>
-      <div class="card moulding"><h1 class="text-center card-title">Moulding</h1>
+      <div class="card moulding"><h1 class="text-center card-title">Kitchen counters</h1>
         <div class="content">
-         <Link to="/moulding"><button class="btn">View all our moulding work</button></Link>
+         <Link to="/kitchens"><button class="btn">View all our moulding work</button></Link>
           <p class="copy">Crown
 
             Base

@@ -11,7 +11,7 @@ export const AboutUs = () => {
         <div className="col-sm-4 ">
           <img src="./makingmoulding.jpg" className="img-fluid"  alt="wood-working-professionals" />
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-6">
           <h4 className="work-text about-text">
             {" "}
             Nazwood Millworks is a family-owned manufacturer of high quality
@@ -20,7 +20,7 @@ export const AboutUs = () => {
           </h4>
         </div>
       </div>
-      <div className="col-sm-2"></div>
+      <div className="col-sm-0"></div>
     </div>
   );
 };

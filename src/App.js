@@ -10,7 +10,7 @@ import { ImageReview } from './components/imageReview';
 import { Login } from './components/login';
 import  {Cabinets } from './detail-pages/cabinets';
 import { Trim } from './detail-pages/Trim';
-import { Moulding } from './detail-pages/Moulding';
+import { Kitchens } from './detail-pages/Kitchens';
 import { Misc } from './detail-pages/misc';
 import { Allphotos } from './detail-pages/allphotos';
 function App() {
@@ -22,7 +22,7 @@ function App() {
    <Route path="/imagereview" element={<ImageReview />} />
    <Route path="/cabinets" element={<Cabinets />} />
    <Route path="/trim" element={<Trim />} />
-   <Route path="/moulding" element={<Moulding />} />
+   <Route path="/kitchens" element={<Kitchens />} />
    <Route path="/misc" element={<Misc />} />
    <Route path="/allphotos" element={<Allphotos />} />
     </Routes>
