@@ -13,7 +13,7 @@ export const FrontPage = () => {
     return (
         <div>
             <div className="">
-                <HeroImage />
+                <HeroImage /> <Header />
                 <div className="wood-border">
                     <div id="about"></div>
                     <AboutUs />

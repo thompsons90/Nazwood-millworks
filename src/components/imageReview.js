@@ -128,15 +128,9 @@ image !== null ?
                 onClick={(_id) => deleteImage(Curb._id)}
                 className="btn btn-danger"
               >
-                Delete
+                Delete from front page
               </button>
-              <button
-                onClick={() => sendImage(Curb.image)}
-                
-                className="btn btn-success"
-              >
-                Display this image
-              </button>
+          
              
             </div>
           );

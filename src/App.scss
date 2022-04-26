@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: white;
   color: black;
   overflow-x: hidden;
   width: 100%;
@@ -213,8 +213,8 @@ ul {
   padding-bottom: 2rem;
 }
 .review-image {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: auto;
   margin: 10px;
 }
 /* contact us */
