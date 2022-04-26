@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export const Reviews = () => {
   const [Curb, setCurb] = useState([]);
   const [active, setActive] = useState(false);
+  const [highlighted, setHighlighted] = useState(null);
   const [image, setImage] = useState(null);
   async function getCalendarInfo() {
     const response = await fetch(
@@ -42,13 +43,13 @@ export const Reviews = () => {
         });
     }
   };
-  
+
 
   const scheduleEvent = (e) => {
-    
+
     e.preventDefault();
     let data = {
-     
+
       image: image,
     };
 
@@ -62,36 +63,38 @@ export const Reviews = () => {
         setImage(null);
 
       });
-    
-  
+
+
   }
 
   if (Curb) {
     return (
       <div className="reviews">
         <h3 className="work-text">Do you have a finished space using Nazwood Millworks? We'd love to see it!</h3>
-<h5 className="work-text"><Link to="/allphotos" className="work-text">See all photos</Link></h5>
-        <div className="row" >
-          {Curb.slice(0,3).map((Curb) => {
+        <h5 className="work-text"><Link to="/allphotos" className="work-text">See all photos</Link></h5>
+        <div className="row" > <div className="col-sm-6 review-box">Testimonial<img src={highlighted} alt="woodwork" className="img-fluid" /></div>
+        <div className="row">
+          {Curb.slice(0, 3).map((Curb) => {
             return (
-              <div className="col-sm-4">
-                
-                  <img
-                    src={Curb.image} 
-                    key={Curb._id}
-                    className="review-image"
-                    alt="Review"
-                  
-                  ></img>
-                </div>
-              
+              <div className="col-sm-1" >
+
+                <img
+                  src={Curb.image}
+                  key={Curb._id}
+                  className="review-image img-fluid"
+                  alt="Review"
+                  onClick={() => setHighlighted(Curb.image)}
+                ></img>
+              </div>
+
             );
           })}{" "}
         </div>
+</div>
         <div>
           {" "}
           <h3 onClick={() => setActive(!active)} className="work-text pointer">
-         Submit your own photo
+            Submit your own photo
           </h3>
           <div className={active === true ? `text-center` : `hidden`}>
             <input
@@ -104,7 +107,7 @@ export const Reviews = () => {
               Submit photo
             </button>
             <button>See all photos</button>
-            {/* {image === null ? `hidden` : `yes`} */}
+
           </div>
         </div>
       </div>

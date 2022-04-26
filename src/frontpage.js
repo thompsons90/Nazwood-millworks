@@ -13,12 +13,12 @@ export const FrontPage = () => {
     return (
         <div>
             <div className="">
-                <Header /> <HeroImage />
+                <HeroImage />
                 <div className="wood-border">
                     <div id="about"></div>
                     <AboutUs />
                     <div id="work"></div>
-                    <OurWork /><WoodTypes />
+                    <OurWork />
                     <div id="reviews"></div>
                     <Reviews />
                 </div>
