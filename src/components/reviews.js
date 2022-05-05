@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export const Reviews = () => {
   const [Curb, setCurb] = useState([]);
   const [active, setActive] = useState(false);
-  const [highlighted, setHighlighted] = useState("https://i.imgur.com/cSl35wC.jpg");
+  const [highlighted, setHighlighted] = useState(
+    "https://i.imgur.com/cSl35wC.jpg"
+  );
   const [image, setImage] = useState(null);
   async function getCalendarInfo() {
     const response = await fetch(
@@ -13,7 +15,7 @@ export const Reviews = () => {
     const json = await response.json();
 
     setCurb(json.Curb);
-    console.log(Curb)
+    console.log(Curb);
   }
 
   useEffect(() => {
@@ -44,12 +46,9 @@ export const Reviews = () => {
     }
   };
 
-
   const scheduleEvent = (e) => {
-
     e.preventDefault();
     let data = {
-
       image: image,
     };
 
@@ -61,39 +60,45 @@ export const Reviews = () => {
       .then(() => {
         alert("Thank you for your photo! ");
         setImage(null);
-
       });
-
-
-  }
+  };
 
   if (Curb) {
     return (
       <div className="reviews">
-        <h3 className="work-text">Do you have a finished space using Nazwood Millworks? We'd love to see it!</h3>
-        <h5 className="work-text"><Link to="/allphotos" className="work-text">See all photos</Link></h5>
-        <div className="row" > 
-        <div className="col-sm-5 review-box"><p></p><img src={highlighted} alt="woodwork" className="img-fluid" /></div>
-        <div className="col-sm-6">
-          <div className="row">
-          {Curb.slice(0, 6).map((Curb) => {
-            return (
-              <div className="col-sm-4" >
-
-                <img
-                  src={Curb.image}
-                  key={Curb._id}
-                  className="review-image img-fluid"
-                  alt="Review"
-                  onClick={() => setHighlighted(Curb.image)}
-                ></img>
-                <p>{Curb.testimonials}</p>
-              </div>
-
-            );
-          })}{" "}
-        </div></div></div>
-        
+        <h3 className="work-text">
+          Do you have a finished space using Nazwood Millworks? We'd love to see
+          it!
+        </h3>
+        <h5 className="work-text">
+          <Link to="/allphotos" className="work-text">
+            See all photos
+          </Link>
+        </h5>
+        <div className="row">
+          <div className="col-sm-5 review-box">
+            <p></p>
+            <img src={highlighted} alt="woodwork" className="img-fluid" />
+          </div>
+          <div className="col-sm-6">
+            <div className="row">
+              {Curb.slice(0, 6).map((Curb) => {
+                return (
+                  <div className="col-sm-4">
+                    <img
+                      src={Curb.image}
+                      key={Curb._id}
+                      className="review-image img-fluid"
+                      alt="Review"
+                      onClick={() => setHighlighted(Curb.image)}
+                    ></img>
+                    <p>{Curb.testimonials}</p>
+                  </div>
+                );
+              })}{" "}
+            </div>
+          </div>
+        </div>
 
         <div>
           {" "}
@@ -107,11 +112,13 @@ export const Reviews = () => {
               name="First image"
               onChange={(e) => uploadImage(e)}
             ></input>
-            <button className={image === null ? `hidden` : `yes`} onClick={(e) => scheduleEvent(e)}>
+            <button
+              className={image === null ? `hidden` : `yes`}
+              onClick={(e) => scheduleEvent(e)}
+            >
               Submit photo
             </button>
             <button>See all photos</button>
-
           </div>
         </div>
       </div>

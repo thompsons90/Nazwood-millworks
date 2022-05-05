@@ -4,6 +4,8 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -104,6 +106,25 @@ body::-webkit-scrollbar {
 }
 
 /* navigation  */
+#header-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100px;
+  background-color: #8d8b8d;
+  z-index: 1;
+  display: flex;
+}
+#header-text-container {
+  margin-top: 10px;
+}
+
+#main-logo {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  margin: 10px;
+}
 
 .navigation {
   position: fixed;
@@ -221,7 +242,7 @@ ul {
 
 /* footer  */
 .footer {
-  background-image: url('./textures/palewood.jpg');
+  background-image: url("./textures/palewood.jpg");
   background-size: auto;
   color: black;
 
