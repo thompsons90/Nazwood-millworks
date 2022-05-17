@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Menu from "../images/burger.png";
 
 export const Header = () => {
   const [hidden, setHidden] = useState(false);
@@ -8,13 +9,12 @@ export const Header = () => {
         <div className="navigation">
           <div className="text-center" onClick={() => setHidden(!hidden)}>
             <img
-              src="./logo.png"
+              src={Menu}
               alt="wood-working"
               className="logo"
               width="140px"
               height="100px"
             ></img>
-            <h2 className="company-title ">NazWood Millworks</h2>
           </div>
         </div>
 
