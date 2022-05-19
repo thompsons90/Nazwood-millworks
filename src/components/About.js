@@ -1,8 +1,9 @@
 import React from "react";
+import { AboutContainer, Line } from "./About.styled";
 
 export const About = () => {
   return (
-    <div id="about-container">
+    <AboutContainer>
       <h3>About</h3>
       <h1>Nazwood Millworks</h1>
       <h3>Artistry | Archetecture | Craftsmanship</h3>
@@ -17,6 +18,6 @@ export const About = () => {
         mouldings and millwork in the Inland Northwest. We are mill direct to
         home builders, contractors, architects, and designers.
       </p>
-    </div>
+    </AboutContainer>
   );
 };
