@@ -5,7 +5,6 @@ import { ServiceContainer } from "./Services.styled";
 export const Services = () => {
   return (
     <ServiceContainer>
-      <hr />
       <h2>Services</h2>
       <WorkPopUp />
       <h2>Wood Species</h2>

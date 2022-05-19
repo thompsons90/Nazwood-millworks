@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../utils/GlobalStyles";
 
 export const AboutContainer = styled.div`
-width: 90%;  
+width: 100%;  
 background-image: url(/newImages/newTextures/texture4.png);
   background-size: cover;
   font-weight: bold;
