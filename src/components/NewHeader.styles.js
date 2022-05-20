@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   position: fixed;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   width: 100vw;
   height: 100px;
@@ -23,6 +24,9 @@ export const HeaderText = styled.div`
   margin-top: 10px;
 `;
 
+export const TitleContainer = styled.div`
+  display: flex;
+`;
 export const MainLogo = styled(Link)`
   background-image: url(/newImages/newLogo/newLogo1.png);
   background-size: cover;
@@ -31,5 +35,7 @@ export const MainLogo = styled(Link)`
 `;
 
 export const NavbarContainer = styled.div`
-  margin-left: 200px;
+  float: right;
+  border: 2px solid red;
+  width: 100px;
 `;
