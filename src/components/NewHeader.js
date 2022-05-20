@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Modal } from "./Modal";
 // import { Link } from "react-router-dom";
 import {
   Container,
@@ -10,8 +11,7 @@ import {
 // import { NewNavbar } from "./Modal";
 
 export const NewHeader = () => {
-  const [hidden, setHidden] = useState(false);
-  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div id="modal-container">
@@ -23,7 +23,12 @@ export const NewHeader = () => {
             <h1>Millworks</h1>
           </HeaderText>
         </TitleContainer>
-        <NavbarContainer></NavbarContainer>
+        <NavbarContainer>
+          <button onClick={() => setIsOpen(true)}>Menu</button>
+          <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+            Fancy
+          </Modal>
+        </NavbarContainer>
       </Container>
     </div>
   );
