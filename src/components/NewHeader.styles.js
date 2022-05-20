@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { colors } from "../utils/GlobalStyles";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   position: fixed;
+  display: inline-block;
   top: 0;
   width: 100vw;
   height: 100px;
@@ -19,4 +21,15 @@ export const Container = styled.div`
 
 export const HeaderText = styled.div`
   margin-top: 10px;
+`;
+
+export const MainLogo = styled(Link)`
+  background-image: url(/newImages/newLogo/newLogo1.png);
+  background-size: cover;
+  width: 100px;
+  margin: 10px;
+`;
+
+export const NavbarContainer = styled.div`
+  margin-left: 200px;
 `;

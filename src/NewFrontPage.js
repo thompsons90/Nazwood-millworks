@@ -1,6 +1,5 @@
 import React from "react";
-import { Footer } from "./components/footer";
-import { NewHeader } from "./components/NewHeader";
+
 import { About } from "./components/About";
 import { Services } from "./components/Services";
 import {
@@ -10,6 +9,7 @@ import {
 } from "./NewFrontPage.styled";
 import { NewFooter } from "./components/NewFooter";
 import { NewLocation } from "./NewLocation";
+import { NewHeader } from "./components/NewHeader";
 
 export const NewFrontPage = () => {
   return (
