@@ -5,20 +5,21 @@ export const FrontPageContainer = styled.div`
   align-items: center;
   margin: auto;
   width: 90%;
+  margin-top: 150px;
 `;
-
-export const InvisibleDiv = styled.div`
-  height: 150px;
-`;
-
-// export const StyledLine = styled.div`
-//   border: 5px solid ${colors.secondary};
-//   width: 80%;
-// `;
 
 export const StyledLine = styled.div`
   border: 1px solid ${colors.secondary};
   width: 90%;
   margin-top: 10px;
   margin-bottom: 10px;
+`;
+
+export const WoodSpecies = styled.div`
+  h2 {
+    color: ${colors.primary};
+    font-size: 25px;
+    text-shadow: #000 1px 1px 2px;
+    font-weight: bold;
+  }
 `;

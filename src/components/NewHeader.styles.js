@@ -36,6 +36,20 @@ export const MainLogo = styled(Link)`
 
 export const NavbarContainer = styled.div`
   float: right;
-  border: 2px solid red;
   width: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+`;
+
+export const MenuButton = styled.button`
+  background: url(/newImages/newLogo/newHamburgerLogo.png);
+  color: white;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: none;
+  &:hover {
+    color: black;
+  }
 `;

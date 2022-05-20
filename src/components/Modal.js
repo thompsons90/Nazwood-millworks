@@ -1,4 +1,5 @@
 import React from "react";
+import { CloseButton } from "./Modal.styled";
 
 export const Modal = ({ open, children, onClose }) => {
   if (!open) return null;
@@ -6,21 +7,8 @@ export const Modal = ({ open, children, onClose }) => {
   return (
     <>
       <ul id="nav" className={open === true ? `overlay ` : `hidden`}>
-        <button onClick={onClose}>X</button>
+        <CloseButton onClick={onClose}>X</CloseButton>
         <div className="overlay-inner text-center">
-          <div className="">
-            <li class="nav-link">
-              <a
-                data-name="Our Work"
-                className="nav-text"
-                href="#work"
-                onClick={onClose}
-              >
-                Our work
-              </a>
-            </li>
-          </div>
-
           <div className="">
             <li class="nav-link">
               <a
@@ -36,12 +24,24 @@ export const Modal = ({ open, children, onClose }) => {
           <div className="">
             <li class="nav-link">
               <a
-                data-name="Reviews"
+                data-name="Services"
                 className="nav-text"
-                href="#reviews"
+                href="#services"
                 onClick={onClose}
               >
-                Reviews
+                Services
+              </a>
+            </li>
+          </div>
+          <div className="">
+            <li class="nav-link">
+              <a
+                data-name="Location"
+                className="nav-text"
+                href="#location"
+                onClick={onClose}
+              >
+                Location
               </a>
             </li>
           </div>
@@ -50,7 +50,7 @@ export const Modal = ({ open, children, onClose }) => {
               <a
                 data-name="Contact Us"
                 className="nav-text"
-                href="#contact"
+                href="#footer"
                 onClick={onClose}
               >
                 Contact Us

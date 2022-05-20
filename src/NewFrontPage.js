@@ -4,28 +4,41 @@ import { About } from "./components/About";
 import { Services } from "./components/Services";
 import {
   FrontPageContainer,
-  InvisibleDiv,
   StyledLine,
+  WoodSpecies,
 } from "./NewFrontPage.styled";
 import { NewFooter } from "./components/NewFooter";
 import { NewLocation } from "./NewLocation";
 import { NewHeader } from "./components/NewHeader";
+import Slideshow from "./components/Slideshow";
+// import { Slideshow } from "./components/Slideshow";
 
 export const NewFrontPage = () => {
   return (
     <>
       <NewHeader />
       <FrontPageContainer>
-        <InvisibleDiv />
+        <Slideshow />
+
         <h2>Quality and Service is our Passion</h2>
         <StyledLine />
+        <div id="about"></div>
         <About />
         <StyledLine />
+        <div id="services"></div>
         <Services />
         <StyledLine />
-        {/* <Footer /> */}
-        <div className="location-container"></div>
+        <WoodSpecies>
+          <h2>Wood Species</h2>
+          <p>
+            Walnut, White Oak, Poplar, Alder, Cherry, Maple, & Hickory or...
+          </p>
+          {/* <div className="location-container"></div> */}
+        </WoodSpecies>
+        <StyledLine />
+        <div id="location"></div>
         <NewLocation />
+        <div id="footer"></div>
         <NewFooter />
       </FrontPageContainer>
     </>

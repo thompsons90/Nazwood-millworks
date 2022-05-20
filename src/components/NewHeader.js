@@ -7,6 +7,7 @@ import {
   MainLogo,
   NavbarContainer,
   TitleContainer,
+  MenuButton,
 } from "./NewHeader.styles";
 // import { NewNavbar } from "./Modal";
 
@@ -24,7 +25,7 @@ export const NewHeader = () => {
           </HeaderText>
         </TitleContainer>
         <NavbarContainer>
-          <button onClick={() => setIsOpen(true)}>Menu</button>
+          <MenuButton onClick={() => setIsOpen(true)}></MenuButton>
           <Modal open={isOpen} onClose={() => setIsOpen(false)}>
             Fancy
           </Modal>
