@@ -1,55 +1,114 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
+import ImgA from "../images/hisphotos/misc/dresser.jpg";
+import ImgB from "../images/hisphotos/misc/misc2.jpg";
+import ImgC from "../images/hisphotos/misc/misc3.jpg";
+import ImgD from "../images/hisphotos/misc/thumbnail_IMG_3910.jpg";
+import ImgE from "../images/hisphotos/misc/work7.jpg";
+import ImgF from "../images/hisphotos/misc/work8.jpg";
+import { CarouselContainer, SlideContainer, Text } from "./cabinets.styled";
+import { NewHeader } from "../components/NewHeader";
 
-export const Misc = () => {
+class MiscCarousel extends Component {
+  render() {
     return (
-        <div className="container-fluid">
-<h3 className="work-text" >Our other wood work</h3>
-<Link to="/" className="work-text">Back to home page</Link>
-            <div className="row">
-                
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/dresser.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/misc1.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/misc2.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/misc3.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/thumbnail_IMG_3910.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/work7.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/work8.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/work9.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/work18.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/work19.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/work20.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/work21.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-                <div className="col-sm-4">
-                    <img src="/hisphotos/misc/work22.jpg" className="img-fluid work-photo" alt="cabinets" />
-                </div>
-            </div>
-            <Link to="/" className="work-text">Back to home page</Link>
-
-        </div>
-    )
+      <>
+        <NewHeader />
+        <CarouselContainer>
+          <Carousel
+            autoPlay
+            infiniteLoop
+            swipeable
+            showArrows={false}
+            showThumbs={false}
+            showStatus={false}
+          >
+            <SlideContainer>
+              <img src={ImgA} alt="1works" />
+            </SlideContainer>
+            <SlideContainer>
+              <img src={ImgB} alt="1works" />
+            </SlideContainer>
+            <SlideContainer>
+              <img src={ImgC} alt="1works" />
+            </SlideContainer>
+            <SlideContainer>
+              <img src={ImgD} alt="1works" />
+            </SlideContainer>
+            <SlideContainer>
+              <img src={ImgE} alt="1works" />
+            </SlideContainer>
+            <SlideContainer>
+              <img src={ImgF} alt="1works" />
+            </SlideContainer>
+          </Carousel>
+          <Text>
+            <h3>Miscelleneous:</h3>
+            <p>
+              Our exhibited work is not an exhausted list, there are more
+              services that we offer!
+            </p>
+          </Text>
+        </CarouselContainer>
+      </>
+    );
+  }
 }
+export default MiscCarousel;
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+
+// export const Misc = () => {
+//     return (
+//         <div className="container-fluid">
+// <h3 className="work-text" >Our other wood work</h3>
+// <Link to="/" className="work-text">Back to home page</Link>
+//             <div className="row">
+
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/dresser.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/misc1.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/misc2.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/misc3.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/thumbnail_IMG_3910.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/work7.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/work8.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/work9.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/work18.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/work19.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/work20.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/work21.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//                 <div className="col-sm-4">
+//                     <img src="/hisphotos/misc/work22.jpg" className="img-fluid work-photo" alt="cabinets" />
+//                 </div>
+//             </div>
+//             <Link to="/" className="work-text">Back to home page</Link>
+
+//         </div>
+//     )
+// }
