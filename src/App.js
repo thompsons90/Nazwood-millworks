@@ -3,7 +3,7 @@ import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ImageReview } from "./components/imageReview";
 import { Login } from "./components/login";
-import { Cabinets } from "./detail-pages/cabinets";
+import CabinetCarousel, { Cabinets } from "./detail-pages/cabinets";
 import { Trim } from "./detail-pages/Trim";
 import { Kitchens } from "./detail-pages/Kitchens";
 import { Misc } from "./detail-pages/misc";
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<NewFrontPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/imagereview" element={<ImageReview />} />
-        <Route path="/cabinets" element={<Cabinets />} />
+        <Route path="/cabinets" element={<CabinetCarousel />} />
         <Route path="/trim" element={<Trim />} />
         <Route path="/kitchens" element={<Kitchens />} />
         <Route path="/misc" element={<Misc />} />
