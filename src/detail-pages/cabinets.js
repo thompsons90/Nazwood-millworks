@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
-// import { SlideContainer } from "./Slideshow.styled";
 import ImgA from "../images/hisphotos/cabinets/cabinets1.jpg";
 import ImgB from "../images/hisphotos/cabinets/work10.jpg";
 import ImgC from "../images/hisphotos/cabinets/work11.jpg";
