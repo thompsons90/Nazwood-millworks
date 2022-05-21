@@ -10,6 +10,7 @@ import ImgE from "../images/hisphotos/trim/trim1.jpg";
 import ImgF from "../images/hisphotos/trim/newMilling.jpg";
 import { CarouselContainer, SlideContainer, Text } from "./cabinets.styled";
 import { NewHeader } from "../components/NewHeader";
+import { NewFooter } from "../components/NewFooter";
 
 class TrimCarousel extends Component {
   render() {
@@ -51,6 +52,7 @@ class TrimCarousel extends Component {
               Frame, & tock S4S.
             </p>
           </Text>
+          <NewFooter />
         </CarouselContainer>
       </>
     );

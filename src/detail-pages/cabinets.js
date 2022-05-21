@@ -9,6 +9,7 @@ import ImgE from "../images/hisphotos/cabinets/work13.jpg";
 import ImgF from "../images/hisphotos/cabinets/work14.jpg";
 import { CarouselContainer, SlideContainer, Text } from "./cabinets.styled";
 import { NewHeader } from "../components/NewHeader";
+import { NewFooter } from "../components/NewFooter";
 
 class CabinetCarousel extends Component {
   render() {
@@ -50,6 +51,7 @@ class CabinetCarousel extends Component {
               Closets, Garage, Vanities, & Custom Furniture{" "}
             </p>
           </Text>
+          <NewFooter />
         </CarouselContainer>
       </>
     );

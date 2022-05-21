@@ -9,6 +9,7 @@ import ImgE from "../images/hisphotos/misc/work7.jpg";
 import ImgF from "../images/hisphotos/misc/work8.jpg";
 import { CarouselContainer, SlideContainer, Text } from "./cabinets.styled";
 import { NewHeader } from "../components/NewHeader";
+import { NewFooter } from "../components/NewFooter";
 
 class MiscCarousel extends Component {
   render() {
@@ -50,6 +51,7 @@ class MiscCarousel extends Component {
               services that we offer!
             </p>
           </Text>
+          <NewFooter />
         </CarouselContainer>
       </>
     );

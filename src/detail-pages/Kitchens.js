@@ -9,6 +9,7 @@ import ImgE from "../images/hisphotos/kitchens/kitchen10.jpg";
 import ImgF from "../images/hisphotos/kitchens/kitchen14.jpg";
 import { CarouselContainer, SlideContainer, Text } from "./cabinets.styled";
 import { NewHeader } from "../components/NewHeader";
+import { NewFooter } from "../components/NewFooter";
 
 class KitchenCarousel extends Component {
   render() {
@@ -50,6 +51,7 @@ class KitchenCarousel extends Component {
               Reproductions, & Arches.
             </p>
           </Text>
+          <NewFooter />
         </CarouselContainer>
       </>
     );
