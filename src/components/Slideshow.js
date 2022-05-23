@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { SlideContainer } from "./Slideshow.styled";
-import ImgA from "../images/Woodwork.jpg";
+import ImgA from "../images/hisphotos/cabinets/work13.jpg";
 import ImgB from "../images/slideshow/bathroom.jpg";
 import ImgC from "../images/slideshow/kitchen.jpg";
-import ImgD from "../images/slideshow/moulding.jpg";
+import ImgD from "../images/hisphotos/cabinets/work17.jpg";
 import ImgE from "../images/slideshow/splice1.png";
 import ImgF from "../images/slideshow/stairs.jpg";
 
