@@ -1,6 +1,5 @@
 import React from "react";
 import { WorkPopUp } from "../add-ons/workPopUp";
-import { StyledLine } from "../NewFrontPage.styled";
 import { ServiceContainer } from "./Services.styled";
 
 export const Services = () => {

@@ -15,6 +15,7 @@ $bp-lg: 800px;
 
   @media (min-width: $bp-md) {
     grid-template-columns: repeat(2, 1fr);
+    border: 3px solid blue;
   }
 
   @media (min-width: $bp-lg) {
@@ -35,9 +36,11 @@ $bp-lg: 800px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
     0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
     0 16px 16px rgba(0, 0, 0, 0.1);
-
+    
   @media (min-width: $bp-md) {
     height: 350px;
+    font-size: 10px;
+    line-height: 0.5px;
   }
 
   &:before {
@@ -136,6 +139,10 @@ $bp-lg: 800px;
   font-size: 1.125rem;
   font-style: italic;
   line-height: 1.35;
+  @media (min-width: $bp-md) {
+    font-size: 14px;
+    padding-top: 0;
+  }
 }
 
 .btn {

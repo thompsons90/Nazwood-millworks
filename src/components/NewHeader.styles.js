@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../utils/GlobalStyles";
 import { Link } from "react-router-dom";
+import { device } from "../utils/Breakpoints";
 
 export const Container = styled.div`
   position: fixed;
@@ -18,6 +19,9 @@ export const Container = styled.div`
     font-weight: bold;
     text-shadow: #000 1px 1px 2px;
   }
+  @media ${device.tablet} {
+    height: 125px;
+  }
 `;
 
 export const HeaderText = styled.div`
@@ -31,7 +35,11 @@ export const MainLogo = styled(Link)`
   background-image: url(/newImages/newLogo/newLogo1.png);
   background-size: cover;
   width: 100px;
+  height: 80px;
   margin: 10px;
+  @media ${device.tablet} {
+    margin-top: 20px;
+  }
 `;
 
 export const NavbarContainer = styled.div`
@@ -40,6 +48,7 @@ export const NavbarContainer = styled.div`
   margin: auto;
   display: flex;
   justify-content: end;
+  margin-right: 10px;
 `;
 
 export const MenuButton = styled.button`

@@ -10,19 +10,19 @@ export const WorkPopUp = () => {
           <Link to="/cabinets"><button class="btn">View all our cabinet work</button></Link>
           <p class="copy">We offer <br />
             <ul>
-              Face frame
+              Face frame,
 
-              Euro
+              Euro,
 
-              Multi-family
+              Multi-family,
 
-              Entertainment centers
+              Entertainment centers,
 
-              Closets
+              Closets,
 
-              Garage
+              Garage,
 
-              Vanities
+              Vanities, &
 
               Custom Furniture
             </ul>
@@ -35,13 +35,13 @@ export const WorkPopUp = () => {
         <Link to="/trim"><button class="btn">View trims </button></Link>
           <p class="copy"> We offer <br />
             Crown
-            Shiplap
+            Shiplap,
 
-            Tongue & Groove
+            Tongue & Groove,
 
-            Custom Flooring
+            Custom Flooring,
 
-            Face Frame stock
+            Face Frame Stock, &
 
             S4S</p>
           
@@ -52,17 +52,17 @@ export const WorkPopUp = () => {
          <Link to="/kitchens"><button class="btn">View all our moulding work</button></Link>
           <p class="copy">Crown
 
-            Base
+            Base,
 
-            Case
+            Case,
 
-            Trim Packages
+            Trim Packages,
 
-            Custom Profiles
+            Custom Profiles,
 
-            Historic Reproductions
+            Historic Reproductions,
 
-            Arches
+            Arches, &
 
             Stair Parts</p>
          
@@ -71,9 +71,7 @@ export const WorkPopUp = () => {
       <div class="card stairs"><h1 class="text-center card-title">Other work</h1>
         <div class="content">
          <Link to="/misc"><button class="btn">See Wood work</button></Link>
-          <p class="copy">We offer <br />
-            I don't know what to put here</p>
-         
+          <p class="copy">Contact us for more options! <br /></p>
         </div>
       </div>
     </main>

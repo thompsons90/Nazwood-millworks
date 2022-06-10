@@ -31,7 +31,7 @@ export const NewFrontPage = () => {
         <WoodSpecies>
           <h2>Wood Species</h2>
           <p>
-            Walnut, White Oak, Poplar, Alder, Cherry, Maple, & Hickory or...
+            Walnut, White Oak, Poplar, Alder, Cherry, Maple, & Hickory or contact us to discuss further options!
           </p>
           {/* <div className="location-container"></div> */}
         </WoodSpecies>
