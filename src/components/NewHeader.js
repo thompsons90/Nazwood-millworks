@@ -18,14 +18,14 @@ export const NewHeader = () => {
     <div id="modal-container">
       <Container>
         <TitleContainer>
-          <MainLogo to="/"></MainLogo>
+          <MainLogo to="/" alt="main logo and home link"></MainLogo>
           <HeaderText>
             <h1>Nazwood</h1>
             <h1>Millworks</h1>
           </HeaderText>
         </TitleContainer>
         <NavbarContainer>
-          <MenuButton onClick={() => setIsOpen(true)}></MenuButton>
+          <MenuButton onClick={() => setIsOpen(true)} alt="menu link to site sections"></MenuButton>
           <Modal open={isOpen} onClose={() => setIsOpen(false)}>
             Fancy
           </Modal>

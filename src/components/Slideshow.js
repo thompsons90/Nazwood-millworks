@@ -1,14 +1,12 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { SlideContainer } from "./Slideshow.styled";
-import ImgA from "../images/hisphotos/cabinets/work13.jpg";
-import ImgB from "../images/slideshow/bathroom.jpg";
-import ImgC from "../images/slideshow/kitchen.jpg";
-import ImgD from "../images/hisphotos/cabinets/work17.jpg";
-import ImgE from "../images/slideshow/splice1.png";
-import ImgF from "../images/slideshow/stairs.jpg";
+import ImgA from "../newImages/newSlideshow/newSlide1";
+import ImgB from "../newImages/newSlideshow/newSlide2";
+import ImgC from "../newImages/newSlideshow/newSlide3";
+import ImgD from "../newImages/newSlideshow/newSlide4";
+
 
 class Slideshow extends Component {
   render() {
@@ -33,12 +31,6 @@ class Slideshow extends Component {
           </div>
           <div className="slide-container">
             <img src={ImgD} alt="1works" />
-          </div>
-          <div className="slide-container">
-            <img src={ImgE} alt="1works" />
-          </div>
-          <div className="slide-container">
-            <img src={ImgF} alt="1works" />
           </div>
         </Carousel>
       </SlideContainer>

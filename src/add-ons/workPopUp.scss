@@ -140,8 +140,7 @@ $bp-lg: 800px;
   font-style: italic;
   line-height: 1.35;
   @media (min-width: $bp-md) {
-    font-size: 14px;
-    padding-top: 0;
+    visibility: hidden;
   }
 }
 
