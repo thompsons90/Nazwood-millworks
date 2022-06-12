@@ -7,8 +7,9 @@ export const NewFooterContainer = styled.div`
   padding: 15px;
   line-height: 0.5;
   color: white;
-  @media (max-width: 300px) {
-    font-size: 12px;
+  font-size: 12px;
+  @media (min-width: 600px) {
+    font-size: 16px;
   }
 `;
 
