@@ -1,13 +1,10 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 // import { SlideContainer } from "./Slideshow.styled";
-import ImgA from "../images/hisphotos/trim/milling.jpg";
-import ImgB from "../images/hisphotos/trim/milling4.jpg";
+import ImgA from "../images/hisphotos/trim/trimStock.jpg";
+import ImgB from "../images/hisphotos/trim/Woodwork.jpg";
 import ImgC from "../images/hisphotos/trim/work4.jpg";
-import ImgD from "../images/hisphotos/trim/woodcutouts.jpg";
-import ImgE from "../images/hisphotos/trim/trim1.jpg";
-import ImgF from "../images/hisphotos/trim/newMilling.jpg";
+import ImgD from "../images/hisphotos/trim/trimphoto.jpg";
 import { CarouselContainer, SlideContainer, Text } from "./cabinets.styled";
 import { NewHeader } from "../components/NewHeader";
 import { NewFooter } from "../components/NewFooter";
@@ -38,12 +35,6 @@ class TrimCarousel extends Component {
             <SlideContainer>
               <img src={ImgD} alt="1works" />
             </SlideContainer>
-            <SlideContainer>
-              <img src={ImgE} alt="1works" />
-            </SlideContainer>
-            <SlideContainer>
-              <img src={ImgF} alt="1works" />
-            </SlideContainer>
           </Carousel>
           <Text>
             <h3>Trim:</h3>
@@ -52,8 +43,8 @@ class TrimCarousel extends Component {
               Frame, & tock S4S.
             </p>
           </Text>
-          <NewFooter />
         </CarouselContainer>
+        <NewFooter />
       </>
     );
   }

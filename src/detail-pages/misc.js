@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import ImgA from "../images/hisphotos/misc/dresser.jpg";
 import ImgB from "../images/hisphotos/misc/misc2.jpg";
 import ImgC from "../images/hisphotos/misc/misc3.jpg";
 import ImgD from "../images/hisphotos/misc/thumbnail_IMG_3910.jpg";
-import ImgE from "../images/hisphotos/misc/work7.jpg";
-import ImgF from "../images/hisphotos/misc/work8.jpg";
 import { CarouselContainer, SlideContainer, Text } from "./cabinets.styled";
 import { NewHeader } from "../components/NewHeader";
 import { NewFooter } from "../components/NewFooter";
@@ -37,22 +34,16 @@ class MiscCarousel extends Component {
             <SlideContainer>
               <img src={ImgD} alt="1works" />
             </SlideContainer>
-            <SlideContainer>
-              <img src={ImgE} alt="1works" />
-            </SlideContainer>
-            <SlideContainer>
-              <img src={ImgF} alt="1works" />
-            </SlideContainer>
           </Carousel>
           <Text>
-            <h3>Miscelleneous:</h3>
+            <h3>Miscellaneous:</h3>
             <p>
               Our exhibited work is not an exhausted list, there are more
               services that we offer!
             </p>
           </Text>
-          <NewFooter />
         </CarouselContainer>
+        <NewFooter />
       </>
     );
   }

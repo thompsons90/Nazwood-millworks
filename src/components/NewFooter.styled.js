@@ -4,8 +4,7 @@ import { colors } from "../utils/GlobalStyles";
 
 export const NewFooterContainer = styled.div`
   background-image: url(/newTextures/texture5.png);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
   line-height: 0.5;
   color: white;
   @media (max-width: 300px) {

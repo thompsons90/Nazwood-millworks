@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import ImgA from "../images/hisphotos/kitchens/kitchen2.jpg";
 import ImgB from "../images/hisphotos/kitchens/kitchen3.jpg";
-import ImgC from "../images/hisphotos/kitchens/kitchen4.jpg";
+import ImgC from "../images/hisphotos/kitchens/kitchen45.jpg";
 import ImgD from "../images/hisphotos/kitchens/kitchen8.jpg";
-import ImgE from "../images/hisphotos/kitchens/kitchen10.jpg";
-import ImgF from "../images/hisphotos/kitchens/kitchen14.jpg";
 import { CarouselContainer, SlideContainer, Text } from "./cabinets.styled";
 import { NewHeader } from "../components/NewHeader";
 import { NewFooter } from "../components/NewFooter";
@@ -37,12 +34,6 @@ class KitchenCarousel extends Component {
             <SlideContainer>
               <img src={ImgD} alt="1works" />
             </SlideContainer>
-            <SlideContainer>
-              <img src={ImgE} alt="1works" />
-            </SlideContainer>
-            <SlideContainer>
-              <img src={ImgF} alt="1works" />
-            </SlideContainer>
           </Carousel>
           <Text>
             <h3>Kitchens:</h3>
@@ -51,8 +42,8 @@ class KitchenCarousel extends Component {
               Reproductions, & Arches.
             </p>
           </Text>
-          <NewFooter />
         </CarouselContainer>
+        <NewFooter />
       </>
     );
   }

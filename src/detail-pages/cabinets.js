@@ -35,7 +35,6 @@ class CabinetCarousel extends Component {
             <SlideContainer>
               <img src={ImgD} alt="1works" />
             </SlideContainer>
-
           </Carousel>
           <Text>
             <h3>Cabinets:</h3>
@@ -44,8 +43,8 @@ class CabinetCarousel extends Component {
               Closets, Garage, Vanities, & Custom Furniture{" "}
             </p>
           </Text>
-          <NewFooter />
         </CarouselContainer>
+        <NewFooter />
       </>
     );
   }

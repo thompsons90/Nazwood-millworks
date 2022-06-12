@@ -3,7 +3,7 @@ import { colors } from "../utils/GlobalStyles";
 
 export const AboutContainer = styled.div`
 width: 100%;  
-background-image: url(/newImages/newTextures/texture4.jpg);
+background-image: url(/newTextures/texture4.jpg);
   background-size: cover;
   font-weight: bold;
   padding 10px;
