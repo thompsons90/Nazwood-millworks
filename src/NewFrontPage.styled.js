@@ -6,6 +6,10 @@ export const FrontPageContainer = styled.div`
   margin: auto;
   width: 90%;
   margin-top: 150px;
+  h2 {
+    display: flex;
+  justify-content: center;
+  }
 `;
 
 export const StyledLine = styled.div`
@@ -19,7 +23,13 @@ export const WoodSpecies = styled.div`
   h2 {
     color: ${colors.primary};
     font-size: 25px;
-    text-shadow: #000 1px 1px 2px;
+    text-shadow: #FFF 1px 1px 2px;
     font-weight: bold;
+    display: flex;
+  justify-content: center;
+  }
+  p {
+    display: flex;
+  justify-content: center;
   }
 `;

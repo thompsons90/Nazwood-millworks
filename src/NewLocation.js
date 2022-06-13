@@ -7,7 +7,7 @@ import {
 export const NewLocation = () => {
   return (
     <>
-      <LocationTitle>Location:</LocationTitle>
+      <LocationTitle>Location</LocationTitle>
       <NewLocationContainer>
         <AddressContainer>
           <p>Mailing Address:</p>

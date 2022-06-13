@@ -9,7 +9,7 @@ background-image: url(/newTextures/texture4.jpg);
   padding 10px;
   h1 {
     color: white;
-    text-shadow: #000 1px 1px 2px;
+    text-shadow: #FFF 1px 1px 2px;
     font-size: 40px;
   }
   h3 {

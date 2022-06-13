@@ -20,8 +20,7 @@ export const NewHeader = () => {
         <TitleContainer>
           <MainLogo to="/" alt="main logo and home link"></MainLogo>
           <HeaderText>
-            <h1>Nazwood</h1>
-            <h1>Millworks</h1>
+            <h1>Nazwood Millworks</h1>
           </HeaderText>
         </TitleContainer>
         <NavbarContainer>

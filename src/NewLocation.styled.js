@@ -7,13 +7,14 @@ export const NewLocationContainer = styled.div`
   h3 {
     color: ${colors.primary};
     font-size: 25px;
-    text-shadow: #000 1px 1px 2px;
+    text-shadow: #FFF 1px 1px 2px;
     font-weight: bold;
   }
 `;
 
 export const AddressContainer = styled.div`
   border: 2px solid black;
+  width: 100%;
   padding: 10px;
   p {
     font-size: 16px;
@@ -23,7 +24,9 @@ export const AddressContainer = styled.div`
 
 export const LocationTitle = styled.h1`
   color: ${colors.primary};
+  display: flex;
+  justify-content: center;
   font-size: 25px;
-  text-shadow: #000 1px 1px 2px;
+  text-shadow: #FFF 1px 1px 2px;
   font-weight: bold;
 `;

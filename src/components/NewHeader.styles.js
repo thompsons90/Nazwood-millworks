@@ -9,7 +9,7 @@ export const Container = styled.div`
   justify-content: space-between;
   top: 0;
   width: 100vw;
-  height: 100px;
+  height: 50px;
   background-color: ${colors.primary};
   z-index: 10;
   display: flex;
@@ -19,39 +19,33 @@ export const Container = styled.div`
     font-weight: bold;
     text-shadow: #000 1px 1px 2px;
   }
-  @media ${device.tablet} {
-    height: 125px;
-  }
+
 `;
 
 export const HeaderText = styled.div`
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-left: 5px;
+  h1 {
+    font-size: 20px;
+  }
   @media (max-width: 300px) {
     h1  {
-      font-size: 16px;
-      margin-top: 12px;
+      font-size: 14px;
     }
+    margin-top: 8px;
   }
 `;
 
 export const TitleContainer = styled.div`
   display: flex;
- 
 `;
 export const MainLogo = styled(Link)`
   background-image: url(/newLogos/newLogo1.png);
   background-size: cover;
-  width: 100px;
-  height: 80px;
-  margin: 10px;
-  @media ${device.tablet} {
-    margin-top: 20px;
-  }
-  @media (max-width: 300px) {
-    width: 80px;
-    height: 65px;
-    margin-top: 15px;
-  }
+  width: 50px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 5px;
 `;
 
 export const NavbarContainer = styled.div`
@@ -66,8 +60,8 @@ export const NavbarContainer = styled.div`
 export const MenuButton = styled.button`
   background: url(/newLogos/newHamburgerLogo.png);
   color: white;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-size: cover;
   border: none;
   &:hover {

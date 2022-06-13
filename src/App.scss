@@ -41,6 +41,10 @@ body::-webkit-scrollbar {
     url("../public/newTextures/texture6.webp");
   background-size: 100% 100%;
   z-index: 95;
+  @media (max-width: 800px){
+  padding-left: 50px;
+  padding-right: 50px;
+}
 }
 .overlay-inner {
   text-align: center;
