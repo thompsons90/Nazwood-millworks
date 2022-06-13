@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../utils/GlobalStyles";
 import { Link } from "react-router-dom";
-import { device } from "../utils/Breakpoints";
+// import { device } from "../utils/Breakpoints";
 
 export const Container = styled.div`
   position: fixed;

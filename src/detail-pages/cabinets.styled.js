@@ -16,17 +16,17 @@ export const CarouselContainer = styled.div`
 `;
 
 export const SlideContainer = styled.div`
-  height: 240px;
+  // height: 240px;
   object-fit: contain;
   overflow: hidden;
   @media (max-width: 300px) {
     height: 175px;
   }
   @media ${device.tablet} {
-    height: 400px;
+    // height: 400px;
   }
   @media ${device.desktop} {
-    height: 500px;
+    // height: 500px;
   }
 `;
 
