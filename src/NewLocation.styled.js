@@ -20,6 +20,7 @@ export const AddressContainer = styled.div`
     font-size: 16px;
     line-height: 0.9;
   }
+  text-align: center;
 `;
 
 export const LocationTitle = styled.h1`

@@ -8,9 +8,11 @@ export const NewFooterContainer = styled.div`
   line-height: 0.5;
   color: white;
   font-size: 12px;
+  text-shadow: #000 1px 1px 2px;
   @media (min-width: 600px) {
     font-size: 16px;
   }
+  text-align: center;
 `;
 
 export const EmployeeLink = styled(Link)`

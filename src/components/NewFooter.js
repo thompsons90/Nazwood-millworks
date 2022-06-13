@@ -13,11 +13,11 @@ export const NewFooter = () => {
       <div id="contact-container">
         <p>Contact:</p>
         <p>sales@nazwood.com</p>
-        <p>
-          Direct <a href="tel:15099911786">(509)991-1786</a>
+        <p >
+          Direct <a href="tel:15099911786" className="phone-link">(509)991-1786</a>
         </p>
         <p>
-          Direct <a href="tel:12088198715">(208)819-8715</a>
+          Direct <a href="tel:12088198715" className="phone-link">(208)819-8715</a>
         </p>
       </div>
       <EmployeeLink to="/login" className="employee-login">
