@@ -15,10 +15,12 @@ background-image: url(/newTextures/texture4.jpg);
   h3 {
     color: ${colors.primary};
     font-size: 25px;
-    text-shadow: #000 1px 1px 2px;
+    text-shadow: #FFF 1px 1px 2px;
     font-weight: bold;
   }
   p {
+    font-weight: bold;
+    text-shadow: #FFF 1px 1px 2px;
     
   }
 `;
