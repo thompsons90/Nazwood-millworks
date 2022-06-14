@@ -23,16 +23,16 @@ class KitchenCarousel extends Component {
             showStatus={false}
           >
             <SlideContainer>
-              <img src={ImgA} alt="1works" />
+              <img src={ImgA} alt="kitchen example one" />
             </SlideContainer>
             <SlideContainer>
-              <img src={ImgB} alt="1works" />
+              <img src={ImgB} alt="kitchen example two" />
             </SlideContainer>
             <SlideContainer>
-              <img src={ImgC} alt="1works" />
+              <img src={ImgC} alt="kitchen example three" />
             </SlideContainer>
             <SlideContainer>
-              <img src={ImgD} alt="1works" />
+              <img src={ImgD} alt="kitchen example four" />
             </SlideContainer>
           </Carousel>
           <Text>

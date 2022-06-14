@@ -24,16 +24,16 @@ class TrimCarousel extends Component {
             showStatus={false}
           >
             <SlideContainer>
-              <img src={ImgA} alt="1works" />
+              <img src={ImgA} alt="trim example one" />
             </SlideContainer>
             <SlideContainer>
-              <img src={ImgB} alt="1works" />
+              <img src={ImgB} alt="trim example two" />
             </SlideContainer>
             <SlideContainer>
-              <img src={ImgC} alt="1works" />
+              <img src={ImgC} alt="trim example three" />
             </SlideContainer>
             <SlideContainer>
-              <img src={ImgD} alt="1works" />
+              <img src={ImgD} alt="trim example four" />
             </SlideContainer>
           </Carousel>
           <Text>
