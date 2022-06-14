@@ -1,3 +1,5 @@
+
+
 body {
   background-color: white;
   color: black;
@@ -304,4 +306,10 @@ ul {
 .review-container {
   display: flex;
   justify-content: center;
+}
+
+.review-title {
+  color: #254441;
+  font-size: 25px;
+  font-weight: bold;
 }

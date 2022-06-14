@@ -67,7 +67,7 @@ export const Reviews = () => {
   if (Curb) {
     return (
       <div className="reviews">
-        <p>
+        <p className="review-title">
           Do you have a finished space using Nazwood Millworks? We'd love to see
           it!
         </p>

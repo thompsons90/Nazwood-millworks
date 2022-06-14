@@ -17,6 +17,8 @@ export const StyledLine = styled.div`
   width: 90%;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const WoodSpecies = styled.div`
