@@ -11,6 +11,7 @@ import { NewFooter } from "./components/NewFooter";
 import { NewLocation } from "./NewLocation";
 import { NewHeader } from "./components/NewHeader";
 import Slideshow from "./components/Slideshow";
+import { Reviews } from "./components/reviews";
 // import { Slideshow } from "./components/Slideshow";
 
 export const NewFrontPage = () => {
@@ -35,6 +36,8 @@ export const NewFrontPage = () => {
           </p>
           {/* <div className="location-container"></div> */}
         </WoodSpecies>
+        <StyledLine/>
+        <Reviews/>
         <StyledLine />
         <div id="location"></div>
         <NewLocation />

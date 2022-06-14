@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
 export const Reviews = () => {
   const [Curb, setCurb] = useState([]);
   const [active, setActive] = useState(false);
@@ -66,15 +67,16 @@ export const Reviews = () => {
   if (Curb) {
     return (
       <div className="reviews">
-        <h3 className="work-text">
+        <p>
           Do you have a finished space using Nazwood Millworks? We'd love to see
           it!
-        </h3>
-        <h5 className="work-text">
-          <Link to="/allphotos" className="work-text">
+        </p>
+        <p>
+          <Link to="/allphotos">
             See all photos
           </Link>
-        </h5>
+        </p>
+        <div className="review-container">
         <div className="row">
           <div className="col-sm-5 review-box">
             <p></p>
@@ -99,12 +101,12 @@ export const Reviews = () => {
             </div>
           </div>
         </div>
-
+        </div>
         <div>
           {" "}
-          <h3 onClick={() => setActive(!active)} className="work-text pointer">
+          <p onClick={() => setActive(!active)} className="work-text pointer">
             Submit your own photo
-          </h3>
+          </p>
           <div className={active === true ? `text-center` : `hidden`}>
             <input
               type="file"
